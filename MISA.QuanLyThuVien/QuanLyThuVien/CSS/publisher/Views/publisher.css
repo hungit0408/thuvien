@@ -1,0 +1,368 @@
+﻿/*Content*/
+.content {
+    height: calc(100% - 150px);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/*Phần này css cho dialog đăng ký bạn đọc*/
+.ui-dialog input, ui-dialog textarea {
+    font: 12px "Segoe UI" !important;
+}
+
+.dialog-content input, .dialog-content select {
+    height: 22px;
+}
+
+.dialog-content {
+    font: 12px "Segoe UI" !important;
+    margin-top: 2px;
+}
+/*Phần này css cho dialog phía bên trái*/
+.dialog-left {
+    width: 129px;
+    height: 222px;
+    margin-top: 5px;
+    border-right: 1px solid #ccc;
+}
+
+    .dialog-left > .avatar {
+        background: url("http://cdn.qlth.vn/Library/Content/Css/Main/Image/Background/no-image.jpg") no-repeat !important;
+        margin: auto;
+        height: 120px;
+        width: 120px;
+    }
+
+    .dialog-left > .avatar {
+    }
+
+    .dialog-left > .avatar-change {
+        text-align: center;
+    }
+/*Phần này css cho dialog phía bên phải*/
+/*Created by BQLINH (6/5/2019)*/
+.dialog-right {
+    width: calc(100% - 130px);
+    height: 227px;
+    padding-left: 10px;
+}
+
+    .dialog-right label {
+        padding-top: 6px;
+    }
+
+    .dialog-right input {
+        box-sizing: content-box;
+        height: 19px;
+        padding-left: 2px;
+    }
+
+.lblTitle {
+    font-weight: bold;
+    color: rgba(0,0,0,0.87);
+}
+
+.secondlable {
+    box-sizing: content-box;
+    padding-left: 30px;
+}
+
+.dlgRow {
+    width: 100%;
+    display: flex;
+    padding-bottom: 6px;
+}
+/*Phần này css các loại cột khác nhau*/
+/*Created by BQLINH (6/5/2019)*/
+.col-type-1, .col-type-2, .col-type-3, .col-type-4, .col-type-5, .col-type-6, .col-type-flex {
+    float: left;
+    height: 24px;
+    margin-bottom: 6px;
+    margin-right: 8px;
+}
+
+    .col-type-1, .col-type-2, .col-type-3, .col-type-4, .col-type-5, .col-type-6, .col-type-flex input {
+        width: 100%;
+    }
+
+.col-type-1 {
+    /*width: 76px;*/
+    width: 65px;
+}
+
+.col-type-2 {
+    width: 46px;
+}
+
+.col-type-3 {
+    width: 53px;
+}
+
+.col-type-4 {
+    width: 72px;
+}
+
+.col-type-5 {
+    width: 105px;
+}
+
+.col-5 input {
+    width: 100%;
+}
+
+.col-type-6 {
+    width: 58px;
+}
+
+.col-type-flex {
+    flex: 1;
+}
+
+.date-pick {
+    height: 25px;
+    width: 104%;
+    border-radius: 2px;
+    background-color: #d1d1d1;
+}
+
+.date-pick-icon {
+    background: transparent url("http://cdn.qlth.vn/Library/Content/Css/Control/image/sprite.gif") no-repeat 1px 0 !important;
+    width: 22px;
+    height: 22px;
+    display: table-cell;
+    border: none;
+    float: left;
+    margin: 1px 0 0 0;
+}
+
+.dlgRow .dropdown-icon {
+    background: white url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=v2cyYQ_uRdOKEHufN3vrGs9gDUBazvIn50iRc5ifHdVOQ8bMopWuHEgVi1XFK_lsa3Y5H4a9br7HAi8frzOoHDWJJzGa9q0aINv5ktWQ7e-Oyy62s_Z8VtPRzQbJNNeS4b5-ZI8VQGgwCAZqH_s5_3lf3CNWpt3fuTYM8wz249B2DD5regjBrjkGPbe0WWKioIg3DpCzL2Iic7UIGzmkwA2&t=636876519251431687") no-repeat;
+    background-position: 0 0;
+    width: 17px;
+    margin-right: -6px;
+    height: 25px;
+    float: right;
+}
+/*Phần này css cho content của dialog xuât bản*/
+/*.ui-dialog {
+    background-color: #DEDEDE;
+    border-color: #dedede;
+    border-style: solid;
+    box-shadow: #ecf2fb 0 1px 0 0 inset, #ecf2fb 0 -1px 0 0 inset, #ecf2fb -1px 0 0 0 inset, #ecf2fb 1px 0 0 0 inset;
+}*/
+
+.ui-corner-all, .ui-widget, .ui-widget-content {
+    background-color: #DEDEDE;
+    border-style: solid;
+    border-width: 1px 1px 0;
+}
+
+.ui-widget-content {
+    width: auto;
+    min-height: 0px;
+    max-height: none;
+    height: 224.25px;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    background-image: -webkit-linear-gradient(top, #ffffff, #DEDEDE );
+    background-color: rgb(245, 245, 245);
+}
+
+    .ui-widget-content::-webkit-scrollbar {
+        display: none;
+    }
+
+.ui-dialog .ui-dialog-content {
+    border: 1px solid #a2b1c5 !important;
+    background-color: white;
+    padding: 8px;
+}
+
+.dlgPublisherDetail .dlgRow {
+    padding: 0;
+}
+
+.dlgPublisherDetail label {
+    margin-top: 4px;
+}
+
+.dlgPublisherDetail input {
+    height: 25px;
+    padding-left: 4px;
+    width: 102%;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    padding-bottom: 3.5px;
+}
+
+.dlgPublisherDetail .col-type-flex {
+}
+
+.col-type-flex textarea {
+    font-family: "Segoe UI" !important;
+    resize: none;
+    width: 102%;
+    padding-top: 2px;
+    padding-left: 4px;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    outline: none;
+}
+
+/*Phần này css cho title dialog*/
+.ui-dialog-titlebar {
+    line-height: 20px;
+    padding: .4em 0 !important;
+    border: none !important;
+    border-radius: 0;
+    font-family: 'Segoe UI';
+    background-color: #dedede;
+    background-image: -webkit-linear-gradient(top, #ffffff, #DEDEDE );
+}
+
+.ui-dialog-title {
+    padding: 0 2px 1px 30px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.87);
+    background: transparent url(http://cdn.qlth.vn/Library/Content/Css/Control/Image/logo25.png) no-repeat 2px center;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    margin: -8px -3px 0 0 !important;
+    outline: none;
+}
+
+button.ui-dialog-titlebar-close {
+    background-image: url(../../../Contents/icon/WebResource.gif) !important;
+    width: 15px !important;
+    height: 15px !important;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border: none;
+    border-radius: 0;
+}
+
+    button.ui-dialog-titlebar-close:hover {
+        background-image: url(../../../Contents/icon/WebResource.gif) !important;
+        border: none;
+    }
+
+.ui-icon, .ui-widget-content .ui-icon, .ui-widget-header .ui-icon {
+    background-image: url(../../../Contents/icon/WebResource.gif) !important;
+}
+
+.ui-draggable .ui-dialog-titlebar {
+    cursor: move;
+}
+/*Phần này css cho footer dialog cung cấp*/
+.ui-dialog .ui-dialog-buttonpane {
+    display: none;
+}
+
+.btnRow {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #dedede;
+    margin-top: 22px;
+    padding-top: 8px;
+}
+
+.none-display {
+    visibility: hidden;
+}
+
+.checkbox-area, .dialog-button {
+    display: flex;
+    width: 80px;
+    height: 25px;
+    outline: none;
+}
+
+.dialog-button {
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e8e8e8);
+}
+
+    .dialog-button:hover {
+        background-image: none;
+        background-color: azure;
+        cursor: pointer;
+    }
+
+.checkbox-area > .checkbox-text {
+    margin: 4px;
+}
+
+.checkbox-icon {
+    margin-top: 1px;
+}
+
+    .checkbox-icon img {
+        outline: none;
+    }
+
+.dialog-icon {
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+}
+
+.dialog-button-text {
+    margin: 4px 0;
+    width: 56px;
+}
+
+.icon-save {
+    margin-left: 150px;
+}
+
+    .icon-save .dialog-icon {
+        background: -1px 0 url("http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/save16.png") no-repeat;
+    }
+
+.icon-cancel {
+    margin-left: 8px;
+}
+
+    .icon-cancel .dialog-icon {
+        background: 0 0 url("http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/Disabled16.png") no-repeat;
+    }
+
+.dialog-button:focus {
+    background-image: none;
+    background-color: azure !important;
+}
+/*Phần này css dialog xóa*/
+.dlgPublisherDelete .btnRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 40px;
+    margin-top: 0;
+    border: none;
+}
+
+.dlgPublisherDelete .dlgRow div {
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.icon-yes {
+    margin-right: 8px;
+}
+
+    .icon-yes .dialog-icon {
+        background: 0 0 url(" http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/Yes.png") no-repeat;
+    }
+
+.icon-no {
+    margin-right: 0;
+}
+
+    .icon-no .dialog-icon {
+        background: 0 0 url("http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/No.png") no-repeat;
+    }
+
+
+

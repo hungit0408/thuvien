@@ -1,0 +1,113 @@
+﻿/* css dialog category symbol */
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable {
+    font-size: 12px;
+    background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 20%, #e6e6e6 52%, #e8e8e8);
+}
+
+.categorySymbolDialog, .symbolNameDialog, .symbolLevelDialog, .textfieldCategorySymbolDialog {
+    display: flex;
+}
+
+div#formCategorySymbol {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix.ui-draggable-handle {
+    background-color: #DEDEDE;
+    background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 20%, #e6e6e6 52%, #e8e8e8);
+    border: none;
+}
+
+input#symbolCategoryInput, input#symbolNameInput, input#levelCategorySymbolInput {
+    width: 200px;
+    margin-top: 4px;
+    height: 20px;
+}
+
+.inputField.col-8 {
+    margin-left: auto;
+}
+
+
+.notetextCategorySymbol {
+    margin-top: 11px;
+    margin-left: 4px;
+    color: red;
+}
+
+button.ui-dialog-titlebar-close {
+    background-image: url('../../icons/WebResource.gif');
+    width: 15px;
+    height: 15px;
+    border: 1px;
+    background-repeat: no-repeat;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    width: 15px;
+    height: 15px;
+}
+
+.ui-dialog-title {
+    background-image: url('../../icons/logo25.png');
+    width: 20px;
+    height: 16px;
+    padding-top: 4px;
+    text-align: right;
+    background-repeat: no-repeat;
+}
+
+span#ui-id-1 {
+    width: 300px;
+    margin-left: -6px;
+    text-align: -webkit-center;
+}
+
+.categorySymbolDialog {
+    margin-top: -5px;
+}
+
+button {
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding-top: 4px;
+}
+
+    /*chỉnh button cua dialog Sơn  10/5/2019*/
+    button.btnSaveCategoryDialog {
+        width: 75px;
+        height: 25px;
+        font-family: 'Segoe UI';
+        text-align: center;
+        background-image: url('../../../Contents/icon/enable16.png');
+        background-repeat: no-repeat;
+        background-position: 6px 5px;
+    }
+
+    button.btnCancelCategoryDialog {
+        width: 75px;
+        height: 25px;
+        font-family: 'Segoe UI';
+        text-align: right;
+        background-image: url(../../../Contents/icon/Disabled_button.png);
+        background-repeat: no-repeat;
+        background-position: 6px 5px;
+    }
+
+
+img.ui-datepicker-trigger {
+    padding-bottom: 1px;
+}
+
+.ui-dialog-buttonset {
+    font-size: 12px;
+}
+
+.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix {
+    border-top: 1px solid #ccc;
+    margin: 0;
+    padding: 0 12px 0 0;
+}

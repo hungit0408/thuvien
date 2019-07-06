@@ -1,0 +1,939 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Phần mềm quản lý trường học</title>
+    <!--<link href="../4. Trường/css/CategorySymbol/styleCategorySymbol.css" rel="stylesheet" />-->
+    <link href="../CSS/symbols/CategorySymbol/styleCategorySymbol.css" rel="stylesheet" />
+    <link href="../CSS/header.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="../4. Trường/css/CategorySymbol/theadCatagorySymbol.css">-->
+    <link href="../CSS/symbols/CategorySymbol/theadCatagorySymbol.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="../4. Trường/css/CategorySymbol/tbodyCategorySymbol.css" />-->
+    <link href="../CSS/symbols/CategorySymbol/tbodyCategorySymbol.css" rel="stylesheet" />
+    <link href="../Scripts/lib/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" />
+    <!--<link href="css/CategorySymbol/styleCategorySymbolDialog.css" rel="stylesheet" />-->
+    <link href="../CSS/symbols/CategorySymbol/styleCategorySymbolDialog.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <div class="top-header">
+                <div class="main-logo"></div>
+                <div class="select-library">Thư viện</div>
+                <div class="select-list-header">
+                    <img src="../Contents/img/header/mui_ten.PNG" />
+                </div>
+
+                <!--Menu chọn chức năng, NDTRUONG 05/05/2019-->
+                <div class="list-menu-header">
+                    <div class="btnWebsite">
+                        <div class="img-list-menu-header img-btnWebsite">
+                            <img src="../Contents/img/header/News-app.png" />
+                        </div>
+                        <div class="text-btn-header">Website</div>
+                    </div>
+                    <div class="btnStudent">
+                        <div class="img-list-menu-header img-btnStudent">
+                            <img src="../Contents/img/header/Student-app.png" />
+                        </div>
+                        <div class="text-btn-header">Học sinh</div>
+                    </div>
+                    <div class="btnManager">
+                        <div class="img-list-menu-header img-btnManager">
+                            <img src="../Contents/img/header/Teacher-app.png" />
+                        </div>
+                        <div class="text-btn-header">Cán bộ, CCVC</div>
+                    </div>
+                    <div class="btnTool">
+                        <div class="img-list-menu-header img-btnTool">
+                            <img src="../Contents/img/header/Equipment-app.png" />
+                        </div>
+                        <div class="text-btn-header">Thiết bị</div>
+                    </div>
+                    <div class="btnLibrary">
+                        <div class="img-list-menu-header img-btnLibrary">
+                            <img src="../Contents/img/header/Library-app.png" />
+                        </div>
+                        <div class="text-btn-header">Thư viện</div>
+                    </div>
+                    <div class="btnGet">
+                        <div class="img-list-menu-header img-btnGet">
+                            <img src="../Contents/img/header/Fee-app.png" />
+                        </div>
+                        <div class="text-btn-header">Khoản thu</div>
+                    </div>
+                    <div class="btnHopital">
+                        <div class="img-list-menu-header img-btnHopital">
+                            <img src="../Contents/img/header/Health-app.png" />
+                        </div>
+                        <div class="text-btn-header">Y tế</div>
+                    </div>
+                    <div class="btnMail">
+                        <div class="img-list-menu-header img-btnMail">
+                            <img src="../Contents/img/header/email-app.png" />
+                        </div>
+                        <div class="text-btn-header">Văn thư</div>
+                    </div>
+                    <div class="btnDocument">
+                        <div class="img-list-menu-header img-btnDocument">
+                            <img src="../Contents/img/header/Document-app.png" />
+                        </div>
+                        <div class="text-btn-header text-btn-header">Tài liệu</div>
+                    </div>
+                    <div class="btnImgs">
+                        <div class="img-list-menu-header img-btnImgs">
+                            <img src="../Contents/img/header/Picture-app.png" />
+                        </div>
+                        <div class="text-btn-header">Kho ảnh</div>
+                    </div>
+                    <div class="btnFilms">
+                        <div class="img-list-menu-header img-btnFilms">
+                            <img src="../Contents/img/header/Video-app.png" />
+                        </div>
+                        <div class="text-btn-header">Kho phim</div>
+                    </div>
+                    <div class="btnAsset">
+                        <div class="img-list-menu-header img-btnAsset">
+                            <img src="../Contents/img/header/Asset-app.png" />
+                        </div>
+                        <div class="text-btn-header">Tài sản</div>
+                    </div>
+                </div>
+                <div class="main-user-info"> Trường THPT MISA 1 - Trần Thị Mai</div>
+            </div>
+
+            <div class="menu-header">
+                <div class="menu-item">
+                    <div class="ul-menu-item-header">
+                        <div class="menu-item-header lbdestop">
+                            <a class="text-btn-item" href="#">Bàm làm việc</a>
+                        </div>
+                        <div class="menu-item-header lbbook">
+                            <a class="text-btn-item" href="#">Sách</a>
+                            <span class="part-arrowdown"><img src="../Contents/img/header/part-arrowdown.png" /></span>
+                            <div class="hide-header-menu hide-header-menu-book">
+                                <div class="hide-header-menu-item"><a href="#">Danh sách sách</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Khai báo số lượng sách ban đầu</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Nhập sách</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Nhập sách</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Xuất sách</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Kiểm kê sách</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-item-header lbnewspaper">
+                            <a class="text-btn-item" href="#">Báo, Tạp chí</a>
+                            <span class="part-arrowdown"><img src="../Contents/img/header/part-arrowdown.png" /></span>
+                            <div class="hide-header-menu hide-header-menu-newspaper">
+                                <div class="hide-header-menu-item"><a href="#">Danh sách báo, tạp chí</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Đăng ký báo, tạp chí</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-item-header lbcirculate">
+                            <a class="text-btn-item" href="#">Lưu thông</a>
+                            <span class="part-arrowdown"><img src="../Contents/img/header/part-arrowdown.png" /></span>
+                            <div class="hide-header-menu hide-header-menu-circulate">
+                                <div class="hide-header-menu-item"><a href="#">Lập phiếu mượn</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Trả sách</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Danh sách phiếu mượn</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Ghi nhận số lượt bạn đọc tại chỗ</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-item-header lbreader">
+                            <a class="text-btn-item" href="../Views/index.html">Bạn đọc</a>
+                        </div>
+                        <div class="menu-item-header lbdictionary">
+                            <a class="text-btn-item" href="#">Danh mục</a>
+                            <span class="part-arrowdown"><img src="../Contents/img/header/part-arrowdown.png" /></span>
+                            <div class="hide-header-menu hide-header-menu-dictionary">
+                                <div class="hide-header-menu-item">
+                                    <a href="../Views/Publisher.html">Nhà xuất bản</a>
+                                </div>
+                                <div class="hide-header-menu-item">
+                                    <a href="../Views/categorySymbol.html">Kí hiệu phân loại</a>
+                                </div>
+                                <div class="hide-header-menu-item"><a href="#">Danh sách mẫu trộn</a></div>
+                                <div class="hide-header-menu-item"><a href="../Views/supplier.html">Nhà cung cấp</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-item-header lbsetting">
+                            <a class="text-btn-item" href="#">Thiết lập</a>
+                            <span class="part-arrowdown"><img src="../Contents/img/header/part-arrowdown.png" /></span>
+                            <div class="hide-header-menu hide-header-menu-setting">
+                                <div class="hide-header-menu-item"><a href="#">Thời gian học/Lịch nghỉ lễ</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Nội quy thư viện</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Kí hiệu xếp giá</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Đánh số đăng ký cá biệt</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Thông tin đơn vị</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Thông tin năm học</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Nhật ký truy cập</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-item-header lbreport">
+                            <a class="text-btn-item" href="#">Báo cáo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="year-label">
+                    <div><span>Năm học: </span></div>
+                    <div>
+                        <select class="select-year-label">
+                            <option value="2018-2019">2018-2019</option>
+                            <option value="2017-2018">2017-2018</option>
+                            <option value="2016-2017">2016-2017</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-header">
+                <p class="content-header-text">Danh sách ký hiệu phân loại chuẩn thư viện quốc gia</p>
+                <div class="spaceHeaderCategory"></div>
+                <div class="feedbackCategory" id="feedbackCategorySymbol">
+                    <div class="feedbackCategory-icon"></div>
+                    <div class="feedbackCategory-text">Phản hồi</div>
+                </div>
+            </div>
+            <div class="content-grid">
+                <div class="toolbar">
+                    <div class="hoverbtn">
+                        <div id="btnAddCategorySymbol" class="toolbar-item">
+                            <div class="toolbar-item-icons toolbar-item-icons-add"></div>
+                            <div class="toolbar-item-text">Thêm</div>
+                        </div>
+                    </div>
+                    <div class="hoverbtn">
+                        <div id="btnEditCategorySymbol" class="toolbar-item">
+                            <div class="toolbar-item-icons toolbar-item-icons-edit"></div>
+                            <div class="toolbar-item-text">Sửa</div>
+                        </div>
+                    </div>
+                    <div class="hoverbtn">
+                        <div id="btnDeleteCategorySymbol" class="toolbar-item">
+                            <div class="toolbar-item-icons toolbar-item-icons-delete"></div>
+                            <div class="toolbar-item-text">Xóa</div>
+                        </div>
+                    </div>
+                    <div class="hoverbtn">
+                        <div id="btnRefreshCategorySymbol" class="toolbar-item">
+                            <div class="toolbar-item-icons toolbar-item-icons-refresh"></div>
+                            <div class="toolbar-item-text">Nạp</div>
+                        </div>
+                    </div>
+                    <div class="hoverbtn">
+                        <div id="btnUsingCategorySymbol" class="toolbar-item">
+                            <div class="toolbar-item-icons toolbar-item-icons-using"></div>
+                            <div class="toolbar-item-text">Sử dụng</div>
+                        </div>
+                    </div>
+                    <div class="hoverbtn">
+                        <div id="btnStopUsingCategorySymbol" class="toolbar-item">
+                            <div class="toolbar-item-icons toolbar-item-icons-stopusing"></div>
+                            <div class="toolbar-item-text">Ngừng sử dụng</div>
+                        </div>
+                    </div>
+                    <div class="hoverbtn">
+                        <div id="btnImportCategorySymbol" class="toolbar-item">
+                            <div class="toolbar-item-icons toolbar-item-icons-import"></div>
+                            <div class="toolbar-item-text">Nhập khẩu</div>
+                        </div>
+                    </div>
+                    <div class="hoverbtn">
+                        <div id="btnHelpCategorySymbol" class="toolbar-item">
+                            <div class="toolbar-item-icons toolbar-item-icons-help"></div>
+                            <div class="toolbar-item-text">Giúp</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="categoryTable">
+                    <div class="categoryThead">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="STT">
+                                        <div fieldData="STT">
+                                            <div class="column-title">STT</div>
+                                        </div>
+                                    </th>
+                                    <th class="Level">
+                                        <div fieldData="Level" dataType="NumBer">
+                                            <div class="column-title">Cấp</div>
+                                            <div class="column-filter">
+                                                <div class="filter-option">
+                                                    <div class="filter-option-left">
+                                                        <span>* :</span>
+                                                    </div>
+                                                    <div class="filter-option-middle"><span class="separator"></span></div>
+                                                    <div class="filter-option-right">
+                                                        <img src="../Contents/img/header/full_arrowdown.png" />
+                                                    </div>
+                                                    <div class="hide-filter-option">
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Xóa điều kiện lọc</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Chứa</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Bằng</div></div>
+                                                        <div class="hide-filter-selection"><div class="point hide-filter-selection-chose">*</div><div class="text-filter-option">Bắt đầu với</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Kết thúc với</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Không chứa</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Trống</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Không trống</div></div>
+                                                    </div>
+                                                </div>
+                                                <input class="filter-input inputLevel" placeholder="" />
+
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="CategorySymbol" dataType="NumberSymbol">
+                                        <div fieldData="CategorySymbolName">
+                                            <div class="column-title">Ký hiệu phân loại</div>
+                                            <div class="column-filter">
+                                                <div class="filter-option">
+                                                    <div class="filter-option-left">
+                                                        <span>* :</span>
+                                                    </div>
+                                                    <div class="filter-option-middle"><span class="separator"></span></div>
+                                                    <div class="filter-option-right">
+                                                        <img src="../Contents/img/header/full_arrowdown.png" />
+                                                    </div>
+                                                    <div class="hide-filter-option">
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Xóa điều kiện lọc</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Chứa</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Bằng</div></div>
+                                                        <div class="hide-filter-selection"><div class="point hide-filter-selection-chose">*</div><div class="text-filter-option">Bắt đầu với</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Kết thúc với</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Không chứa</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Trống</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Không trống</div></div>
+                                                    </div>
+                                                </div>
+                                                <input class="filter-input inputCategorySymbol" placeholder="" />
+
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="SymbolName">
+                                        <div fieldData="SymbolName">
+                                            <div class="column-title">Tên phân loại</div>
+                                            <div class="column-filter">
+                                                <div class="filter-option">
+                                                    <div class="filter-option-left">
+                                                        <span>* :</span>
+                                                    </div>
+                                                    <div class="filter-option-middle"><span class="separator"></span></div>
+                                                    <div class="filter-option-right">
+                                                        <img src="../Contents/img/header/full_arrowdown.png" />
+                                                    </div>
+                                                    <div class="hide-filter-option">
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Xóa điều kiện lọc</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Chứa</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Bằng</div></div>
+                                                        <div class="hide-filter-selection"><div class="point hide-filter-selection-chose">*</div><div class="text-filter-option">Bắt đầu với</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Kết thúc với</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Không chứa</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Trống</div></div>
+                                                        <div class="hide-filter-selection"><div class="point">*</div><div class="text-filter-option">Không trống</div></div>
+                                                    </div>
+                                                </div>
+                                                <input class="filter-input inputSymbolName" placeholder="" />
+
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="Using">
+                                        <div fieldData="Using" dataType="Boolean">
+                                            <div class="column-title">Sử dụng</div>
+                                            <div class="column-filter">
+                                                <select id="selectUsing" class="selectUsingID">
+                                                    <option value="0">Bỏ lọc</option>
+                                                    <option value="1">Có</option>
+                                                    <option value="2">Không</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="spacetable">
+
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="categoryTbody">
+                        <div class="grid-view">
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>1</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span>1</span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span>0</span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span>Tổng loại</span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                    <input type="checkbox" name="name" value="" checked />
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>2</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span>1</span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span>1</span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span>Tâm lý - Triết học - Logic</span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                    <input type="checkbox" name="name" value="" checked />
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>3</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span>1</span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span>2</span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span>Chủ nghĩa vô thần - Tôn giáo</span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                    <input type="checkbox" name="name" value="" checked />
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>4</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span>1</span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span>3</span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span>Xã hội chính trị</span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                    <input type="checkbox" name="name" value="" checked />
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>4</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>5</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>6</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>7</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>8</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>9</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>10</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>11</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>12</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>13</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>14</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>15</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>16</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>17</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>18</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>19</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>20</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>21</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>22</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>23</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>24</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>25</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>26</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>27</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>28</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>29</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                            <div class="data-item-row">
+                                <div class="data-item-1">
+                                    <span>30</span>
+                                </div>
+                                <div class="data-item-2">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-3">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-4">
+                                    <span></span>
+                                </div>
+                                <div class="data-item-5" style="border-right:none;">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grid footer -->
+                        <!-- chỉnh sửa bởi NDTRUONG (08/05/2019) -->
+                        <div class="grid-footer">
+                            <div class="grid-footer-left">
+                                <span class="go-to-first-page icon-change-page"></span>
+                                <span class="go-to-before-page icon-change-page"></span>
+                                <span class="separator"></span>
+                                <span>Trang</span>
+                                <span class="current-display-record"><input type="text" name="name" value="1" /></span>
+                                <span class="total-record">trên 2</span>
+                                <span class="go-to-after-page icon-change-page"></span>
+                                <span class="go-to-last-page icon-change-page"></span>
+                                <span class="separator"></span>
+                                <span>Số bản ghi</span>
+                                <span class="number-display-record">
+                                    <select class="select-page-grid-footer" name="selectPage">
+                                        <option value="0">10</option>
+                                        <option value="1" selected>50</option>
+                                        <option value="2">100</option>
+                                        <option value="3">150</option>
+                                    </select>
+                                </span>
+                                <!--<div class="dropdown-icon"></div>-->
+                            </div>
+                            <div class="grid-footer-right float-right">
+                                <span>Hiển thị 1 - 50 trên 100 kết quả</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="formCategorySymbol" class="formCategorySymbolID" style="display:none">
+            <div class="categorySymbolDialog">
+                <div class="textfieldCategorySymbolDialog col-4">
+                    <p>Ký hiệu PL</p>
+                    <div class="notetextCategorySymbol">(*)</div>
+                </div>
+                <div class="inputField col-8">
+                    <input type="text" class="inputCategorySymbolDialog required" id="symbolCategoryInput" />
+                </div>
+            </div>
+            <div class="symbolNameDialog">
+                <div class="textfieldCategorySymbolDialog col-4">
+                    <p>Tên PL</p>
+                    <div class="notetextCategorySymbol">(*)</div>
+                </div>
+                <div class="inputField col-8">
+                    <input type="text" class="inputCategorySymbolDialog required" id="symbolNameInput" />
+                </div>
+            </div>
+            <div class="symbolLevelDialog">
+                <div class="textfieldCategorySymbolDialog col-4">
+                    <p>Cấp</p>
+                </div>
+                <div class="inputField col-8">
+                    <input type="text" class="inputCategorySymbolDialog required" id="levelCategorySymbolInput" />
+                </div>
+            </div>
+        </div>
+        <script src="../Scripts/lib/jquery/jquery-3.3.1.js"></script>
+        <script src="../Scripts/lib/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../Scripts/lib/jquery-ui-1.12.1/jquery-ui.js"></script>
+        <script src="../Scripts/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <script src="../Scripts/lib/bootstrap-4.3.1/js/bootstrap.js"></script>
+        <script src="../Scripts/dialog/dialogAddCategorySymbol.js"></script>
+        <script src="../Scripts/view/indexCategorySymbol.js"></script>
+        <script src="scripts/base/validateCategory.js"></script>
+    </div>
+</body>
+
+</html>

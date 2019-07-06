@@ -1,0 +1,64 @@
+﻿body {
+    overflow-y: hidden;
+    min-width: 1200px;
+}
+
+.container-fluid {
+    font-family: 'Segoe UI';
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+
+/*============================Phan content==================================*/
+
+.content {
+    position: absolute;
+    bottom: 15px;
+    top: 87px;
+    right: 15px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+    /*Phan content-header*/
+    .content .content-header p {
+        font-size: 21px;
+        margin: 0;
+        line-height: 1;
+    }
+
+    .content .content-header>button {
+        background: none;
+        width: 85px;
+        height: 28px;
+        border: 1px solid #ccc;
+        margin: 8px 0px;
+        font-size: 12px;
+        padding: 4px 15px;
+    }
+
+.div-feedback {
+    position: absolute;
+    right: 0px;
+    top: -4px;
+}
+#btnFeedback1 {
+    width: 100px;
+    height: 27px;
+    border: 1px solid #dddddd;
+    background: #f6f6f6 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABkCAYAAABHLFpgAAAAIUlEQVQYlWP4/fv3fyYGBgaGoUb8//+feAlixfBLDBMCAA/mE6gVKmgTAAAAAElFTkSuQmCC) 50% 50% repeat-x;
+    padding: 0px 2px 5px 12px;
+    background-image: url(/Contents/icon/state.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    border-radius: 3px;
+}
+#btnFeedback1 .ui-btn-text{
+    font-weight: bold;
+    font-size: 13px;
+}
+tr:nth-child(even) {
+    background-color: #fafafa;
+}

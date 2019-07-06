@@ -1,0 +1,75 @@
+﻿.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable {
+    background-color: #e6e6e6;
+}
+#dlgStateDelete {
+    height: 88px !important;
+    align-items: center;
+    padding: 0;
+    background-color: #fff;
+}
+
+.dlg-state-content {
+    display: flex;
+    font-size: 12px;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #A5B3C5 !important;
+}
+.icon-state {
+    height: 32px;
+}
+.content-state {
+    height: 55px;
+    padding: 15px 9px 15px 10px;
+    display: flex;
+    align-items: center;
+}
+    .content-state p {
+        margin: 0 7px;
+    }
+.button-state {
+    display: flex;
+    justify-content: flex-end;
+    padding: 3px 11px 1px 0px;
+}
+    .button-state button {
+        width: 75px;
+        height: 22px;
+        margin-left: 6px;
+        background-image: -webkit-linear-gradient(top,#fff,#f9f9f9 48%,#e2e2e2 52%,#e7e7e7);
+        border: 1px solid #d1d1d1;
+        border-radius: 4px;
+        font-size: 12px !important;
+        font-family: 'Segoe UI' !important;
+        display: flex;
+        align-items: center;
+        outline: none;
+    }
+        .button-state button:hover {
+            background-image: -webkit-linear-gradient(top, #e3f2ff, #d9edff 48%, #c2d8f2 52%, #c6dcf6);
+            cursor: pointer;
+        }
+#btn-state-yes .btn-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-image: url(http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/Yes.png);
+}
+#btn-state-no .btn-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-image: url(http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/No.png);
+}
+
+#btn-state-agree .btn-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-image: url(http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/submit16.png);
+}
+.button-state span.btn-text {
+    flex-grow: 1;
+}
+
+

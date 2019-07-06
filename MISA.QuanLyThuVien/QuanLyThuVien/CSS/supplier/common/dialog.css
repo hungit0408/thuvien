@@ -1,0 +1,191 @@
+﻿/*Phần này css cho dialog đăng ký bạn đọc*/
+.dialog-content input, .dialog-content select {
+    height: 22px;
+}
+
+.dialog-content {
+    font: 12px "Segoe UI";
+    margin-top: 5px;
+}
+/*Phần này css cho dialog phía bên trái*/
+.dialog-left {
+    width: 129px;
+    height: 222px;
+    margin-top: 5px;
+    border-right: 1px solid #ccc;
+}
+
+    .dialog-left > .avatar {
+        background: url("http://cdn.qlth.vn/Library/Content/Css/Main/Image/Background/no-image.jpg") no-repeat !important;
+        margin: auto;
+        height: 120px;
+        width: 120px;
+    }
+
+    .dialog-left > .avatar {
+    }
+
+    .dialog-left > .avatar-change {
+        text-align: center;
+    }
+/*Phần này css cho dialog phía bên phải*/
+/*Created by BQLINH (6/5/2019)*/
+.dialog-right {
+    width: calc(100% - 130px);
+    height: 227px;
+    padding-left: 10px;
+}
+
+    .dialog-right label {
+        padding-top: 3px;
+    }
+
+    .dialog-right input {
+        box-sizing: content-box;
+        height: 19px;
+        padding-left: 2px;
+    }
+
+.lblTitle {
+    font-weight: bold;
+}
+
+.secondlable {
+    box-sizing: content-box;
+    padding-left: 30px;
+}
+
+.dlgRow {
+    width: 100%;
+    display: flex;
+    padding-bottom: 6px;
+}
+/*Phần này css các loại cột khác nhau*/
+/*Created by BQLINH (6/5/2019)*/
+.col-type-1, .col-type-2, .col-type-3, .col-type-4, .col-type-5, .col-type-6, .col-type-flex {
+    float: left;
+    height: 24px;
+    margin-bottom: 6px;
+    margin-right: 8px;
+}
+
+    .col-type-1, .col-type-2, .col-type-3, .col-type-4, .col-type-5, .col-type-6, .col-type-flex input {
+        width: 100%;
+    }
+
+.col-type-1 {
+    width: 76px;
+}
+
+.col-type-2 {
+    width: 46px;
+}
+
+.col-type-3 {
+    width: 53px;
+}
+
+.col-type-4 {
+    width: 72px;
+}
+
+.col-type-5 {
+    width: 105px;
+}
+
+.col-5 input {
+    width: 100%;
+}
+
+.col-type-6 {
+    width: 58px;
+}
+
+.col-type-flex {
+    flex: 1;
+}
+
+.date-pick {
+    height: 25px;
+    width: 104%;
+    border-radius: 2px;
+    background-color: #d1d1d1;
+}
+
+.date-pick-icon {
+    background: transparent url("http://cdn.qlth.vn/Library/Content/Css/Control/image/sprite.gif") no-repeat 1px 0 !important;
+    width: 22px;
+    height: 22px;
+    display: table-cell;
+    border: none;
+    float: left;
+    margin: 1px 0 0 0;
+}
+
+.dlgRow .dropdown-icon {
+    background: white url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=v2cyYQ_uRdOKEHufN3vrGs9gDUBazvIn50iRc5ifHdVOQ8bMopWuHEgVi1XFK_lsa3Y5H4a9br7HAi8frzOoHDWJJzGa9q0aINv5ktWQ7e-Oyy62s_Z8VtPRzQbJNNeS4b5-ZI8VQGgwCAZqH_s5_3lf3CNWpt3fuTYM8wz249B2DD5regjBrjkGPbe0WWKioIg3DpCzL2Iic7UIGzmkwA2&t=636876519251431687") no-repeat;
+    background-position: 0 0;
+    width: 17px;
+    margin-right: -6px;
+    height: 25px;
+    float: right;
+}
+/*Phần này css cho content của dialog cung cấp*/
+.dlgSupplierDetail .dlgRow {
+    padding: 0;
+}
+
+.dlgSupplierDetail label {
+    margin-top: 6px;
+    margin-left: 8px;
+}
+
+}
+
+.dlgSupplierDetail input {
+    height: 25px;
+}
+
+.dlgSupplierDetail .col-type-flex {
+}
+
+.col-type-flex textarea {
+    resize: none;
+    width: 100%;
+}
+
+
+/*Phần này css cho title dialog*/
+.ui-dialog-titlebar {
+    line-height: 20px;
+    padding-left: 30px;
+    font-family: 'Segoe UI';
+    background: transparent url(http://cdn.qlth.vn/Library/Content/Css/Control/Image/logo25.png) no-repeat 2px center;
+}
+
+#ui-id-2 {
+    padding-left: 20px;
+    font-weight: bold;
+}
+/*Phần này css cho footer dialog*/
+.ui-dialog .ui-dialog-buttonpane button {
+    width: 80px;
+    height: 25px;
+    font-family: 'Segoe UI';
+}
+#btnSaveID {
+    background: 4px 4px url("http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/save16.png") no-repeat;
+    line-height: 1px;
+    font-family: 'Segoe UI';
+    border: none;
+    background-color: #d3d1d1;
+}
+
+#btnCancelID {
+    background: 4px 4px url("http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/Disabled16.png") no-repeat;
+    line-height: 1px;
+    font-family: 'Segoe UI';
+    border: none;
+    background-color: #bababa;
+    padding-left: 21px;
+}

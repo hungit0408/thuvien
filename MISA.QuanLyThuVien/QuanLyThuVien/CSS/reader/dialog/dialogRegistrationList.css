@@ -1,0 +1,523 @@
+﻿
+/*create by NDTRUONG (05/05/2019)*/
+/*css dialog form*/
+.ui-dialog {
+    font-family: 'Segoe UI';
+}
+
+    .ui-dialog select {
+        font-family: 'Segoe UI';
+        outline: none;
+    }
+
+.caution {
+    display: flex;
+    height: 34px;
+    padding-bottom: 5px;
+}
+.inputField {
+    margin-bottom: 5px;
+    height: 29px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+.category {
+    height: 29px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+thead {
+    left: -1px;
+    right: -2px;
+    border-collapse: collapse;
+}
+
+.textField {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "Segoe UI";
+    color: rgba(0,0,0,0.87);
+    margin-bottom: 10px;
+}
+
+
+
+.inputField-text {
+    font-size: 12px;
+    font-family: "Segoe UI";
+    color: rgba(0,0,0,0.87);
+    padding-bottom: 3px;
+}
+
+.datetime {
+    display: flex;
+    width: 188px;
+    align-items: center;
+    float: left;
+    margin-right: 25px;
+}
+
+.datetimeip.col-6 :hover {
+    cursor: pointer;
+}
+
+input#dateAllocated-dialog2, input#dateEffect-dialog2, input#dateExpired-dialog2 {
+    width: 74px;
+    height: 23px;
+    padding: 2px 5px;
+}
+
+.textCategory {
+    font-size: 12px;
+}
+
+.wrap-select {
+    width: 100px;
+}
+
+    .wrap-select select {
+        margin-left: 12px;
+        padding-left: 3px;
+        width: 94px;
+        height: 22px;
+        font-size: 12px;
+    }
+
+.categoryIcons {
+    background-image: url('/Contents/icon/muitenxuong.gif');
+    margin-top: 3px;
+    width: 17px;
+    height: 20px;
+    border: 1px solid #aaaaaa;
+    background-repeat: no-repeat;
+}
+
+
+
+.caution {
+    font-size: 12px;
+    height: 23px;
+    font-style: italic;
+    padding-bottom: 5px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.categoryIcons {
+    width: 18px;
+    height: 20px;
+    background-image: url('/Contents/icon/muitenxuong.gif');
+    background-repeat: no-repeat;
+    display: none;
+}
+.cautionIcon {
+    height: 16px;
+    width: 16px;
+    background-image: url(/Contents/icon/Info_16.png);
+}
+.cautionText1 {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.cautionText2 {
+    margin-left: 6px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.studentTable {
+    border: 1px solid #ccc;
+    height: 233px;
+    width: 690px;
+    margin: auto;
+}
+
+.btnAddRowText {
+    font-size: 12px;
+    padding: 7px;
+    padding-bottom: 8px;
+    padding-left: 3px;
+}
+
+.btnAddRowIcon {
+    background-image: url('/Contents/icon/add16.png');
+    width: 18px;
+    height: 16px;
+    margin-left: 4px;
+    background-repeat: no-repeat;
+}
+
+
+.column-dialog-title {
+    height: 22px;
+    padding-top: 2px;
+}
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable {
+    border: 3px solid #e9e9e9;
+}
+
+div#formReaderDetail {
+    background-color: #ffffff;
+}
+
+button.btnCheck-dialog.ui-button.ui-corner-all.ui-widget {
+    font-size: 12px;
+}
+
+button.ui-button.ui-corner-all.ui-widget {
+    font-size: 12px;
+}
+
+/* chỉnh bảng trong dialog đăng ký theo danh sách học sinh*/
+table.studentTbl {
+    font-size: 12px;
+    width: 100.4%;
+    height: 165px;
+    margin: -1px;
+    border: none;
+    background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 20%, #e6e6e6 52%, #e8e8e8);
+}
+
+    table.studentTbl tr {
+        display: table-row;
+    }
+
+th.thStudent {
+    width: 163px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+th.thIDCard {
+    width: 99px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+th.thStudentCode {
+    width: 99px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+th.thClass {
+    width: 99px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+th.thGender {
+    width: 79px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+th.thBirthday {
+    width: 93px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+th.thNone {
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+tbody.tbodyStudentTbl td {
+    padding-left: 8px;
+}
+
+thead.theadStudentTbl {
+    background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 20%, #e6e6e6 52%, #e8e8e8);
+}
+
+div#ui-datepicker-div {
+    font-size: 12px;
+}
+
+.datetimeip {
+    font-size: 12px;
+    width: 108px;
+    padding-left: 10px;
+    height: 24px;
+}
+.btnAddRow {
+    display: flex;
+    height: 29px;
+    align-items: center;
+    background-image: -webkit-linear-gradient(top,#f9f9f9,#e3e4e6);
+}
+
+/*chỉnh tiêu đề dialog*/
+.ui-dialog-title {
+    background-image: url(/Contents/icon/logo25.png);
+    background-repeat: no-repeat;
+    font-size: 12px;
+    padding-left: 29px;
+    height: 22px;
+}
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable {
+    background-color: #e9e9e9;
+    border: 1px solid #ccc;
+}
+
+.ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix.ui-draggable-handle {
+    border: none;
+    padding: 6px 5px 4px;
+    background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 20%, #e6e6e6 52%, #e8e8e8);
+    height: 32px;
+}
+
+
+
+
+/*chỉnh button cua dialog Sơn  10/5/2019*/
+button#btnCheck-dialog {
+    width: 75px;
+    height: 25px;
+    font-family: 'Arial';
+    text-align: right;
+    background-image: url('/Contents/icon/enable16.png');
+    background-repeat: no-repeat;
+    border: none;
+    background-position: 6px 5px;
+    border-radius: 5px;
+}
+
+button#btnCancer-dialog {
+    width: 75px;
+    height: 25px;
+    font-family: 'Arial';
+    text-align: right;
+    background-image: url('/Contents/icon/Disabled_button.png');
+    background-repeat: no-repeat;
+    border: none;
+    background-position: 6px 5px;
+    border-radius: 5px;
+}
+
+
+img.ui-datepicker-trigger {
+    padding-bottom: 1px;
+    height: 22px;
+    min-width: 22px;
+    background: transparent url(http://cdn.qlth.vn/Library/Content/Css/Control/image/sprite.gif) no-repeat 1px 0 !important;
+    margin-bottom: 2px;
+}
+
+.ui-dialog-buttonset {
+    font-size: 12px;
+}
+
+button.ui-dialog-titlebar-close {
+    background-image: url('/Contents/icon/WebResource.gif');
+    width: 15px !important;
+    height: 15px !important;
+    border: 1px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+
+/*chỉnh tbody bảng trong dialog*/
+.tbodyStudentTbl {
+    width: 100%;
+    background-color: #ffffff;
+    border: none;
+}
+
+tbody.tbodyStudentTbl td {
+    border: 1px solid #ccc;
+}
+
+.checkStudent {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    background-image: url('../../4. Trường/icons/delete_metro.png');
+    background-repeat: no-repeat;
+}
+/*chỉnh dialog content*/
+div#formReaderDetail {
+    overflow: hidden;
+}
+
+div#dlgResgisterReaderList {
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 10px 10px 8px;
+    border: 1px solid #A5B3C5;
+    border-bottom: none;
+    height: 440px !important;
+    display:flex;
+    flex-direction: column
+}
+
+.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix {
+    padding: 0 10px 0 0;
+    margin: 0px 0px;
+    border: 1px solid #A5B3C5;
+    border-top: none;
+}
+.ui-dialog-buttonset {
+    width: 690px;
+    border-top: 1px solid darkgrey;
+    display: flex;
+    justify-content: flex-end;
+}
+/*chỉnh datetimepicker*/
+table.ui-datepicker-calendar tr {
+    width: 24px;
+}
+
+/*css cho bảng đăng ký theo lớp*/
+.classTable {
+    border: 1px solid #ccc;
+    width: 100.3%;
+    height: 200px;
+    border-collapse: collapse;
+}
+
+th.ckbClass {
+    width: 31px;
+    padding-top: 5px;
+}
+
+th.class {
+    width: 45%;
+}
+
+th.groupClass {
+   
+}
+
+table.classTbl th {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+table.classTbl {
+    width: 100.3%;
+    border: none;
+    margin-top: -1px;
+    margin-left: -1px;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+tbody.tbodyClassTbl td {
+    border: 1px solid #ccc;
+    padding: 0px 0 0 10px;
+}
+
+thead.theadClassTbl {
+    background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 20%, #e6e6e6 52%, #e8e8e8);
+}
+
+    thead.theadClassTbl tr {
+        display: table-row;
+    }
+
+tbody.tbodyClassTbl input {
+    margin-left: -2px;
+    margin-top: 4px;
+}
+/*css cho thẻ div sử dụng mã học sinh làm thẻ thư viện*/
+div#ckbUsingStudentCodeID {
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+    div#ckbUsingStudentCodeID input {
+        margin: 2px;
+        margin-top: 15px;
+    }
+
+    div#ckbUsingStudentCodeID p {
+        margin-left: 3px;
+        margin-top: 12px;
+    }
+/*css chỉnh bảng đăng kí danh sách theo khối*/
+
+div#groupStudentTableID {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+table.groupTable {
+    margin-top: -1px;
+    margin-left: -1px;
+    width: 100.4%;
+    border: none;
+    border-collapse: collapse;
+}
+
+thead.theadGroupTbl {
+    background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 20%, #e6e6e6 52%, #e8e8e8);
+}
+
+th.ckbThStudentTbl {
+    padding: 6px 0 2px 2px;
+}
+
+th.groupThStudentTbl {
+    width: 658px;
+}
+
+thead.theadGroupTbl tr {
+    display: table-row;
+}
+
+table.groupTable th {
+    border: 1px solid #ccc;
+}
+
+table.groupTable td {
+    padding: 0px 0 0 10px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+
+tbody.TbodyGroupTbl input {
+    margin-left: -1px;
+    margin-top: 4px;
+}
+
+/*Phần css cho button*/
+.dialog-button-rl {
+    border-top: 1px solid #ccc;
+    height: 30px;
+    padding: 6px 2px 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 9px;
+}
+    .dialog-button-rl button {
+        width: 75px;
+        height: 22px;
+        padding: 1px 2px;
+        font-size: 12px;
+        margin-left: 6px;
+        background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e8e8e8);
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+    }
+#btn-dialog-Agree:hover, #btn-dialog-Cancel:hover {
+    background-image: -webkit-linear-gradient(top, #e3f2ff, #d9edff 48%, #c2d8f2 52%, #c6dcf6);
+    cursor: pointer;
+}
+.content-dialog2 {
+    height: 238px !important;
+}

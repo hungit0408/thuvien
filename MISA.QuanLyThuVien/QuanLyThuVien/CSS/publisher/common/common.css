@@ -1,0 +1,69 @@
+﻿html, body, .wrapper {
+    min-width: 1200px;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI' !important;
+    font-size: 12px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: normal;
+    color: rgba(0,0,0,0.87);
+    line-height: 20px;
+    padding:  15px 0 8px 0;
+}
+
+input {
+    width: 100%;
+    outline: none;
+    padding-left: 2px;
+}
+
+textarea {
+    overflow: hidden;
+}
+/*Trôi trái*/
+.float-left {
+    float: left;
+}
+/*Trôi phải*/
+.float-right {
+    float: right;
+}
+/*Viền đỏ cho input chưa được điền đủ*/
+.border-red {
+    border: 1px solid red !important;
+}
+/*Checkbox false*/
+.checkbox-false {
+    width: 13px;
+    height: 13px;
+    background: url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=-XJOOaAD6-UQF3ye0LGfcIEl8_P5m2HGoM6uNgMGUewVSFzZa95Ea3YcHo2JcIv7SLjX31JJ2jSVKsE3loA2efyRbrogMCZ5KESg6HLVelMfKEVcV78TXj4UpwnXKp9pqRdQLtnEM8sphJ01U18-MLpcp4irm6Jwf3OLGrClVsWMaZ2kd62UiNwX4BBCZp3yFCL_WMcug192cGAxeaLLe3Sg1B-OlTOOuSI1MocM08Q1&t=636876519251431687") 0 0 no-repeat;
+    background-position: 0 0;
+}
+
+    .checkbox-false:focus {
+        background-position: -13px 0;
+    }
+/*Checkbox true*/
+.checkbox-true {
+    background-position: 0 -13px;
+}
+
+    .checkbox-true:focus {
+        background-position: -13px -13px;
+    }
+/*Loading*/
+.loading {
+    position: absolute;
+    top: calc(50% - 210px);
+    left: calc(50% - 210px);
+    right: 0;
+    bottom: 0;
+    background-image: url('../../../Contents/img/supppliers/loading.gif');
+    background-repeat: no-repeat;
+}
+

@@ -1,0 +1,154 @@
+﻿/*Grid footer*/
+.grid-footer {
+    width: 100%;
+    min-height: 28px;
+    max-height: 28px;
+    border-top: 1px solid #ccc;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 12px;
+}
+
+.grid-footer-left-two, .grid-footer-left-one {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.icon-change-page {
+    display: flex;
+    width: 19px;
+    height: 19px;
+    margin: -1px 3px 0;
+}
+/*Trang thứ mấy*/
+.current-display-page span {
+    height: 22px;
+}
+
+.current-display-page input, .page-size input {
+    background: #fff;
+    font: normal 12px/18px 'Segoe UI';
+    height: 21px;
+    width: 28px;
+    border: solid 1px #ccc;
+    padding: 1px 0 2px 4px;
+    margin: 0 6px;
+}
+/*Số record có thể hiển thị trên một trang*/
+.page-size input {
+    margin: 0 0 0 6px;
+    width: 36px;
+}
+
+.page-size {
+    position: relative;
+}
+/*Chọn số record trên một trang*/
+.select-page-size{
+    position: absolute;
+    display: none;
+    width: 70px;
+    height: 100px;
+    left: 6px;
+    bottom: 22px;
+    border: 1px solid #b3d7ff;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 1px 10px -2px;
+}
+
+    .select-page-size> div {
+        height: 25%;
+        padding: 5px 0 5px 5px;
+    }
+.select-page-size.hide-on-click:hover {
+    cursor: pointer;
+}
+.select-page-size.hide-on-click div:hover {
+    cursor: pointer;
+    background-color: #e1edfb !important;
+}
+
+
+.dropdown-icon {
+    background: white url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=v2cyYQ_uRdOKEHufN3vrGs9gDUBazvIn50iRc5ifHdVOQ8bMopWuHEgVi1XFK_lsa3Y5H4a9br7HAi8frzOoHDWJJzGa9q0aINv5ktWQ7e-Oyy62s_Z8VtPRzQbJNNeS4b5-ZI8VQGgwCAZqH_s5_3lf3CNWpt3fuTYM8wz249B2DD5regjBrjkGPbe0WWKioIg3DpCzL2Iic7UIGzmkwA2&t=636876519251431687") no-repeat;
+    background-position: 0 0;
+    width: 17px;
+    height: 21px;
+    border-width: 0 0 1px;
+    cursor: pointer;
+    border-color: #b5b8c8;
+    border-style: solid;
+}
+/*Đây là thanh chia cách giữa nạp và giúp, và là thanh chia cách ở dưới grid footer */
+.separator {
+    height: 14px;
+    border-style: solid;
+    border-width: 0 1px;
+    border-left-color: #98c8ff;
+    border-right-color: white;
+    margin: 6px 2px;
+}
+
+
+.next-step img:hover {
+    background-color: azure;
+    border: 1px solid;
+    border-color: #99bce8;
+    border-radius: 2px;
+}
+
+.next-last img:hover {
+    background-color: azure;
+    border: 1px solid;
+    border-color: #99bce8;
+    border-radius: 2px;
+}
+.prev-step img:hover {
+    background-color: azure;
+    border: 1px solid;
+    border-color: #99bce8;
+    border-radius: 2px;
+}
+
+.prev-last img:hover {
+    background-color: azure;
+    border: 1px solid;
+    border-color: #99bce8;
+    border-radius: 2px;
+}
+.grid-footer-right {
+    height: 100%;
+    width: 300px;
+    line-height: 29px;
+    text-align: right;
+    padding-right: 10px;
+}
+.prev img, .next img {
+    border: 1px solid;
+    border-color: #f7f7f7;
+    border-radius: 2px;
+}
+
+
+.amount-record {
+    display: flex;
+}
+.prev , .next {
+    margin-bottom: 2px;
+}
+span.total-page {
+    margin-right: 3px;
+}
+.next-on span, .next-off span {
+    margin: 0 3px;
+}
+.prev-on span, .prev-off span {
+    margin: 0 3px;
+}
+.page-size-click {
+    background-color: #b3d7ff;
+}

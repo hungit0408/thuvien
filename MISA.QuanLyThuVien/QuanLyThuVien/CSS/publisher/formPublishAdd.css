@@ -1,0 +1,125 @@
+﻿.wrapper-cover {
+    background: #00000059;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    display: none;
+}
+
+.formPublisherAdd {
+    position: absolute;
+    z-index: 100;
+    top: calc(50% - 115px);
+    left: calc(50% - 190px);
+    width: 380px;
+    height: 230px;
+    font: normal 12px/18px 'Segoe UI';
+    background-color: #DEDEDE;
+    border-color: #a2b1c5;
+    border-radius: 5px;
+}
+
+.formPublisherAdd-content-button {
+    margin-left: 200px;
+}
+
+.formPublisherAdd-header {
+    display: flex;
+    line-height: 32px;
+}
+
+.formPublisherAdd-header-left {
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.formPublisherAdd-header-center {
+    color: rgba(0,0,0,0.87);
+    font-weight: bold;
+    margin-top: 1px;
+    width: 200px;
+    margin-left: 5px;
+}
+
+.formPublisherAdd-header-right {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-image: url(../../Contents/icon/icon_dialog.gif);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    margin-left: 127px;
+    margin-top: 7px;
+}
+
+.formPublisherAdd-content {
+    background-color: white;
+    width: 370px;
+    height: 187px;
+    position: relative;
+    border-radius: 3px;
+    top: -4px;
+    left: 5px;
+    box-shadow: 0px 0px 13px -6px black;
+}
+
+.formPublisherAdd-content-detail-top {
+    margin: 10px 13px 8px 13px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.formPublisherAdd-content-detail {
+    display: flex;
+    padding-bottom: 6px;
+}
+
+.formPublisherAdd-content-detail-text {
+    width: 70px;
+}
+
+.formPublisherAdd-content-detail-input {
+    border-radius: 3px;
+}
+
+    .formPublisherAdd-content-detail-input > input {
+        width: 274px;
+        height: 22px;
+        font: normal 12px/18px 'Segoe UI';
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+.formPublisherAdd-content-detail-text-note > input {
+    height: 36px;
+}
+
+.formPublisherAdd-content-button {
+    display: flex;
+    /* margin-top: 12px; */
+}
+
+.formPublisherAdd-content-button-all {
+    display: flex;
+    width: 75px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    line-height: 18px;
+    text-align: center;
+    margin-top: -3px;
+    background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 20%, #f7f7f7 52%, #e8e8e8);
+}
+
+.text-formPublisherAdd-content-button-cancel {
+    padding-left: 5px;
+}
+
+.text-formPublisherAdd-content-button-save {
+    padding-left: 12px;
+}
+
+button.formPublisherAdd-content-button-all.formPublisherAdd-content-button-cancel {
+    margin-left: 7px;
+}

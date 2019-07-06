@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MISA.QuanLyThuVien.QLTV01", "QuanLyThuVien\MISA.QuanLyThuVien.QLTV01.csproj", "{730A3FB7-EC88-4ADE-8E2C-34C3917D5FFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MISA.BL", "MISA.BL\MISA.BL.csproj", "{FB434273-D78F-4F1C-BB85-801EB638E0CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MISA.Common", "MISA.Common\MISA.Common.csproj", "{E89E86E4-6527-4CC2-983E-7772B8A54BCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MISA.DL", "MISA.DL\MISA.DL.csproj", "{BC373470-3E97-4B0E-BBD8-94ECA1600E37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MISA.Entity", "MISA.Entity\MISA.Entity.csproj", "{FF0FC4DD-DB2C-4F27-9D80-C455CBADC4F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{730A3FB7-EC88-4ADE-8E2C-34C3917D5FFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{730A3FB7-EC88-4ADE-8E2C-34C3917D5FFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{730A3FB7-EC88-4ADE-8E2C-34C3917D5FFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{730A3FB7-EC88-4ADE-8E2C-34C3917D5FFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB434273-D78F-4F1C-BB85-801EB638E0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB434273-D78F-4F1C-BB85-801EB638E0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB434273-D78F-4F1C-BB85-801EB638E0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB434273-D78F-4F1C-BB85-801EB638E0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E89E86E4-6527-4CC2-983E-7772B8A54BCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E89E86E4-6527-4CC2-983E-7772B8A54BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E89E86E4-6527-4CC2-983E-7772B8A54BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E89E86E4-6527-4CC2-983E-7772B8A54BCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC373470-3E97-4B0E-BBD8-94ECA1600E37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC373470-3E97-4B0E-BBD8-94ECA1600E37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC373470-3E97-4B0E-BBD8-94ECA1600E37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC373470-3E97-4B0E-BBD8-94ECA1600E37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF0FC4DD-DB2C-4F27-9D80-C455CBADC4F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF0FC4DD-DB2C-4F27-9D80-C455CBADC4F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF0FC4DD-DB2C-4F27-9D80-C455CBADC4F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF0FC4DD-DB2C-4F27-9D80-C455CBADC4F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BDDF762-9421-4C50-AAC6-65194826B000}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/vansonnguyen159
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = QuanLyThuVien\\MISA.QuanLyThuVien.QLTV01.csproj
+		SccProjectName1 = QuanLyThuVien
+		SccLocalPath1 = QuanLyThuVien
+		SccProjectUniqueName2 = MISA.BL\\MISA.BL.csproj
+		SccProjectName2 = MISA.BL
+		SccLocalPath2 = MISA.BL
+		SccProjectUniqueName3 = MISA.Common\\MISA.Common.csproj
+		SccProjectName3 = MISA.Common
+		SccLocalPath3 = MISA.Common
+		SccProjectUniqueName4 = MISA.DL\\MISA.DL.csproj
+		SccProjectName4 = MISA.DL
+		SccLocalPath4 = MISA.DL
+		SccProjectUniqueName5 = MISA.Entity\\MISA.Entity.csproj
+		SccProjectName5 = MISA.Entity
+		SccLocalPath5 = MISA.Entity
+	EndGlobalSection
+EndGlobal

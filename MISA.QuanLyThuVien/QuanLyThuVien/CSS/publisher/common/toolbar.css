@@ -1,0 +1,58 @@
+﻿/*Tool bar*/
+.toolbar {
+    width: 100%;
+    height: 29px;
+    border: 1px solid #ccc;
+    background-color: #e8e8e8;
+    background-image: -webkit-linear-gradient(top,#f9f9f9,#e3e4e6);
+    display: flex;
+}
+
+    .toolbar .toolbar-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
+        margin-top: 2px;
+        height: 15px;
+        cursor: pointer;
+        box-sizing: content-box;
+        border: 1px solid rgba(204, 204, 204, 0.00);
+    }
+
+        .toolbar .toolbar-item:hover {
+            background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 20%, #afc3dc 52%, #e8e8e8);
+            border-radius: 3px;
+            background: azure;
+            border-color: #99bce8;
+        }
+
+        .toolbar .toolbar-item .toolbar-item-icon {
+            width: 16px;
+            height: 16px;
+            background-repeat: no-repeat;
+        }
+
+        .toolbar .toolbar-item .toolbar-item-text {
+            padding: 4px;
+        }
+/*Lấy ảnh cho toolbar*/
+.icon-add {
+    background: url("http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/add16.png");
+}
+
+.icon-edit {
+    background: url("http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/edit16.png");
+}
+
+.icon-delete {
+    background: url("http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/delete_metro.png");
+}
+
+.icon-refresh {
+    background: url("http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/refresh16.png");
+}
+
+.icon-help {
+    background: url("http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/help16.png");
+}

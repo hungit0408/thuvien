@@ -1,0 +1,260 @@
+﻿/*NDTRUONG(08/05/2019)*/
+.categoryTbody {
+    width: 100%;
+    height: 100%;
+}
+/*Grid view*/
+.grid-view {
+    width: 100%;
+    height: calc(100% - 93px);
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+    .grid-view ::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+/* Một hàng*/
+.data-item-row {
+    width: 100%;
+    height: 26px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+/*Cột loại 1 dành riêng cho nhỏ*/
+.data-item-1 {
+    float: left;
+    height: 100%;
+    width: 3%;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ccc;
+    line-height: 37px;
+    text-align: center;
+    box-sizing: border-box;
+}
+/*Cột loại 2 cho các cột có độ rộng vừa*/
+.data-item-2 {
+    float: left;
+    height: 100%;
+    width: 12.3%;
+    line-height: 37px;
+    padding-left: 5px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/*Cột loại 3 cho các cột có độ rộng lớn*/
+.data-item-3 {
+    float: left;
+    height: 100%;
+    width: 20%;
+    line-height: 37px;
+    padding-left: 5px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/*Grid footer*/
+.grid-footer {
+    width: 100%;
+    height: 29px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.grid-footer-left {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+/*Grid view*/
+.grid-view {
+    width: 100%;
+    height: calc(100% - 93px);
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+    .grid-view ::webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+/* Một hàng*/
+.data-item-row {
+    width: 100%;
+    height: 28px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+/*Cột loại 1 dành riêng cho nhỏ*/
+.data-item-1 {
+    float: left;
+    height: 100%;
+    width: 2%;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ccc;
+    line-height: 37px;
+    text-align: center;
+    box-sizing: border-box;
+}
+/*Cột loại 2 cho các cột có độ rộng vừa*/
+.data-item-2 {
+    float: left;
+    height: 100%;
+    width: 5.1%;
+    line-height: 37px;
+    padding-left: 8px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/*Cột loại 3 cho các cột có độ rộng lớn*/
+.data-item-3 {
+    float: left;
+    height: 100%;
+    width: 10%;
+    line-height: 37px;
+    padding-left: 8px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/*cột 4*/
+.data-item-4 {
+    float: left;
+    height: 100%;
+    width: 78%;
+    line-height: 37px;
+    padding-left: 8px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/*cột 5*/
+.data-item-5 {
+    float: left;
+    height: 100%;
+    width: 4%;
+    text-align: center;
+    line-height: 37px;
+    padding-left: 5px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/*Grid footer*/
+.grid-footer {
+    width: 100%;
+    height: 29px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.grid-footer-left {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.icon-change-page {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    margin: 0 3px 0;
+}
+
+.current-display-record span {
+    height: 22px;
+}
+
+.current-display-record input, .number-display-record select {
+    background: #fff;
+    font: normal 12px/18px 'Arial';
+    height: 15px;
+    width: 28px;
+    border: solid 1px #ccc;
+    padding: 1px 0px 2px 2px;
+    margin: 0 6px;
+}
+
+.number-display-record {
+    width: 53px;
+    margin-left: 5px;
+    overflow: hidden;
+}
+
+    .number-display-record select {
+        width: 47px;
+        height: 21px;
+        margin: 0 0 0 6px;
+    }
+
+.dropdown-icon {
+    background: white url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=v2cyYQ_uRdOKEHufN3vrGs9gDUBazvIn50iRc5ifHdVOQ8bMopWuHEgVi1XFK_lsa3Y5H4a9br7HAi8frzOoHDWJJzGa9q0aINv5ktWQ7e-Oyy62s_Z8VtPRzQbJNNeS4b5-ZI8VQGgwCAZqH_s5_3lf3CNWpt3fuTYM8wz249B2DD5regjBrjkGPbe0WWKioIg3DpCzL2Iic7UIGzmkwA2&t=636876519251431687") no-repeat;
+    background-position: 0 0;
+    width: 17px;
+    height: 20px;
+    border-width: 0 0 1px;
+    cursor: pointer;
+    border-color: #b5b8c8;
+    border-style: solid;
+}
+/*Đây là thanh chia cách giữa nạp và giúp, và là thanh chia cách ở dưới grid footer */
+.separator {
+    height: 14px;
+    border-style: solid;
+    border-width: 0 1px;
+    border-left-color: #98c8ff;
+    border-right-color: white;
+    margin: 6px 2px;
+}
+/*Đây là phần lấy icon thay đổi trang*/
+.go-to-first-page {
+    background: url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=VVEChlsgTvqFK8Hh3Ckn_nDeQpjc3_brSCMco36wyFPFXl3SqftNXB-IQcY09ssKQbSIN01P7v5f1wJz1LfLh1ekbuFPCsvD-kvNtcAmDANJvlRhtdCTnmR6KOojQQqu7Dl7Uc7MTv0PSSC6lB593UanRQomKiD9UnG5ucYLV_TsCL1XUoXkSqqhYQ3t3UnyFjWwgZijzoUxzyY5GefN0h_A0iRHyaTTOhicgoLn_FE1&t=636876519251431687");
+}
+
+.go-to-before-page {
+    background: url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=6UU7UcGAqsglY2-meZTl7CCPI-x9vsx-ljthaiuTJIQ5hME1tQ1TGHNqP3CqXHRbP_dGXH-RXjyCiOoyOOHzaqOZ5URCweqGPfa8PzinQ65MOuKyAMaL3Wuzvzojbzysh4SDrRM_fnb4mcJpniV4d0tpMSaJcjBDF16bhAVEQN7yo6jCyhj9kVytQrjgO_34EdkLfDEvSD9_VTCTswtRFpkgdJ0SWz3MbdTUjmIL_Tg1&t=636876519251431687");
+}
+
+.go-to-after-page {
+    /*background: url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=o-R_-t_HuggUcvBntdbD7lTlh3LWPYwT_MPho8WxFpUL_BRvmmC4oByK08JvR2e8Ac-NDZieNsf4Jp1B93Bv-HvCc6RZgPFfgp9vqSy5_FEk9NEX8J3I-TOctnPBh5Iad9381Fj-dQyRsJMMohCKBk5JtriXCdvI7TeepfS4itUn3DVOrfhHbH31GzqUfM9R2BWma2VBZslb5VeXC11FBkP9ZJyOJQh-bZZSpKvyMzU1&t=636876519251431687");*/
+    background: url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=nYbCMnxbx_C8yPEa4jTx40vvre5FHBkyWjiDTDTsgnQd3KUM2tl-6KMAISyPqbnGRZfJGZnyNcrPoGYu8rABcRqC0DQGKir6nwqS_rwpy_E5MPMQc1IR5rFje2xpr1pSGwgmfaOmh06odk6hMHGiZR8jBKcNdX3OpnATgse1MCYhyhtwNF817iKNam7BwJKZ7QneTW_7LyAzGPOq1vzQ4Euxl8vswrEmbOsuMAPMbIg1&t=636876519251431687");
+}
+
+.go-to-last-page {
+    /*background: url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=FwX5CAQPb4-vdjZXV_eVzR9vj-JOUsOpc1CfxKPCS1Pss7XGKp7bdod_4e8mXyAXNMRpN02rnbdc6NW_RW76jVrDp0yoiCfj_54sO65pIwFNZq2giQrJPoO4wcncw4OtihhfHnLOvrTP7fopNQ2saNKrhDaP7laE1HtWt98TO_ejl_0ULpvTNxjlNH8lelxjf0Y0hFDMwtPdr-FZNOVElBMPtLTqXAWBodgxKEMozGw1&t=636876519251431687");*/
+    background: url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=do9zVEz4FkiEcQp4DDlnB1yv_0ZuovpAJeFOWAU7SXjgpUwFAfofwktFHINtjOusWJeHFKYlhYukVfbrVVztgR1vGODH_REuqYViYI65zAvkiT6gzjqJ36_mKClzL6M17R7bryFbE6MunyAzBTTGkJetO5gOxmGxU06eDFX6JLhf1LKjvQIbclk-j4oWjM7HQ9PIspnOe9O1TPLKOGrjLTk8xkMoCZtfRoKOYfSX1dI1&t=636876519251431687");
+}
+
+.grid-footer-right {
+    height: 100%;
+    width: 200px;
+    line-height: 29px;
+    text-align: right;
+    height: 100%;
+    width: 300px;
+    line-height: 29px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/*Hàng được chọn*/
+.row-selected {
+    background-color: orange !important;
+}
+/*viền đỏ cho input chưa được điền đủ*/
+.border-red {
+    border: 1px solid red;
+}

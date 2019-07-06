@@ -1,0 +1,397 @@
+﻿/*CSS Chung trong form*/
+.border-red{
+    border: 1px solid red !important;
+}
+.highlight-row-form {
+    background-color: #f7f7f7 !important;
+}
+.highlight-row {
+    background-color: #ffcb60 !important;
+}
+
+
+/*Content*/
+.publisher-content {
+    height: calc(100% - 80px);
+    margin-left: 15px;
+    margin-right: 15px;
+    font: normal 12px/18px 'Segoe UI';
+}
+
+span.current-display-record>input {
+    border-radius: 3px;
+}
+
+input[type="text"] {}
+
+select.number-display-record {
+    margin-left: 6px;
+    border-radius: 3px;
+}
+.publisher-title {
+    font-size: 21px;
+    /* margin: 20px; */
+    line-height: 1;
+    margin-top: 12px;
+}
+/*Tool bar*/
+.publisher-toolbar {
+    width: 100%;
+    height: 29px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #e8e8e8;
+    background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 20%, #f7f7f7 52%, #e8e8e8);
+    display: flex;
+}
+
+    .publisher-toolbar .publisher-toolbar-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin-top: 1px;
+        height: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        box-sizing: content-box;
+    }
+
+        .publisher-toolbar .publisher-toolbar-item:hover {
+            background-color: #99bce8;
+            border-color: #99bce8;
+        }
+
+        .publisher-toolbar .publisher-toolbar-item .publisher-toolbar-item-icon {
+            width: 16px;
+            height: 16px;
+            background-repeat: no-repeat;
+        }
+
+        .publisher-toolbar .publisher-toolbar-item .publisher-toolbar-item-text {
+            padding: 4px;
+        }
+/*Lấy ảnh cho toolbar*/
+.publisher-icon-add {
+    background: url("http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/add16.png");
+}
+
+.publisher-icon-edit {
+    background: url("http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/edit16.png");
+}
+
+.publisher-icon-delete {
+    background: url("http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/delete_metro.png");
+}
+
+.publisher-icon-refresh {
+    background: url("http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/refresh16.png");
+}
+
+.publisher-icon-help {
+    background: url("http://cdn.qlth.vn/Library/Content/Css/Main/image/icon/help16.png");
+}
+/*Grid*/
+.grid {
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: white;
+    overflow: hidden;
+}
+
+.grid-header {
+    width: 100%;
+    height: 64px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+}
+/*grid header loại 1 dành cho cột loại nhỏ*/
+.grid-header-item-1 {
+    float: left;
+    height: 100%;
+    width: 3.1%;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/*grid header loại 1 dành cho cột loại vừa*/
+.grid-header-item-2 {
+    float: left;
+    height: 100%;
+    width: 12.3%;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/*grid header loại 1 dành cho cột loại lớn*/
+.grid-header-item-3 {
+    float: left;
+    height: 100%;
+    width: 24.1%;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.column-title {
+    height: 34px;
+    padding: 4px;
+    border-bottom: 1px solid #f7f7f7;
+    box-sizing: border-box;
+    line-height: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.column-filter .filter-input {
+    float: left;
+    width: calc(100% - 51px);
+    margin-top: 3px;
+}
+
+    .column-filter .filter-input input {
+        border: solid 1px #ccc;
+        border-radius: 2px;
+        height: 22px;
+        padding-left: 2px;
+        width: 100%;
+    }
+
+.filter-option {
+    float: left;
+    height: 22px;
+    width: 36px;
+    margin: 3px 1px 4px 4px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: relative;
+}
+
+/*--CSS hide-filter-option--*/
+/*--DQTuan 13/05/2019--*/
+.hide-filter-option {
+    display: none;
+    top: 110%;
+    left: 0px;
+    width: 135px;
+    height: 210px;
+    border-radius: 3px;
+    position: absolute;
+    background-color: #edeeee;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 10px -2px;
+    padding: 6px 4px 2px 4px;
+}
+    .hide-filter-option > div {
+        width: 100%;
+        height: 12.5%;
+    }
+
+        .hide-filter-option > div:hover {
+            background-color: #99bce8;
+            border-radius: 3px;
+        }
+
+    .hide-filter-option .point {
+        line-height: 23px;
+        visibility: hidden;
+        width: 20%;
+        text-align: center;
+        float: left;
+    }
+
+    .hide-filter-option .text-filter-option {
+        width: 80%;
+        height: 100%;
+        padding-left: 3px;
+        float: left;
+        border-left: 1px solid #f7f7f7;
+    }
+.hide-filter-selection-chose {
+    visibility: visible !important;
+}
+
+
+.filter-option:hover {
+    cursor: pointer;
+    background-color: #99bce8;
+}
+
+    .filter-option .filter-option-left {
+        display: flex;
+        font-weight: bold;
+    }
+
+    .filter-option .filter-option-middle {
+        border-left-color: #d1d1d1;
+        display: flex;
+        margin-right: -2px;
+    }
+
+    .filter-option .filter-option-right {
+        display: flex;
+    }
+/*Grid view*/
+.grid-view {
+    width: 100%;
+    height: calc(100% - 93px);
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+    .grid-view ::webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+/* Một hàng*/
+.data-item-row {
+    width: 100%;
+    height: 29px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+/*Cột loại 1 dành riêng cho nhỏ*/
+.data-item-1 {
+    float: left;
+    height: 100%;
+    width: 3.1%;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ccc;
+    line-height: 28px;
+    text-align: center;
+    box-sizing: border-box;
+}
+/*Cột loại 2 cho các cột có độ rộng vừa*/
+.data-item-2 {
+    float: left;
+    height: 100%;
+    width: 12.3%;
+    line-height: 28px;
+    padding-left: 5px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/*Cột loại 3 cho các cột có độ rộng lớn*/
+.data-item-3 {
+    float: left;
+    height: 100%;
+    width: 24.1%;
+    line-height: 28px;
+    padding-left: 5px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/*Grid footer*/
+.grid-footer {
+    width: 100%;
+    height: 29px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    display: flex;
+    bottom:10px;
+}
+
+.grid-footer-left {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/*Căn chỉnh dữ liệu*/
+/*DQTuan 09/05/2019*/
+.grid-align-publisherCode{
+    text-align: left;
+}
+.grid-align-publisherName, .grid-align-publisherAddress, .grid-align-publisherNote {
+    text-align: left;
+}
+.grid-checkbox{
+    text-align: center;
+
+}
+
+.icon-change-page {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    margin: 0 3px 0;
+}
+
+.current-display-record span {
+    height: 22px;
+}
+
+.current-display-record input, .number-display-record input {
+    background: #fff;
+    font: normal 12px/18px 'Arial';
+    height: 21px;
+    width: 28px;
+    border: solid 1px #ccc;
+    padding: 1px 0px 2px 2px;
+    margin: 0 6px;
+}
+
+.number-display-record input {
+    width: 36px;
+    margin: 0 0 0 6px;
+}
+
+.dropdown-icon {
+    background: white url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=v2cyYQ_uRdOKEHufN3vrGs9gDUBazvIn50iRc5ifHdVOQ8bMopWuHEgVi1XFK_lsa3Y5H4a9br7HAi8frzOoHDWJJzGa9q0aINv5ktWQ7e-Oyy62s_Z8VtPRzQbJNNeS4b5-ZI8VQGgwCAZqH_s5_3lf3CNWpt3fuTYM8wz249B2DD5regjBrjkGPbe0WWKioIg3DpCzL2Iic7UIGzmkwA2&t=636876519251431687") no-repeat;
+    background-position: 0 0;
+    width: 17px;
+    height: 21px;
+    border-width: 0 0 1px;
+    cursor: pointer;
+    border-color: #b5b8c8;
+    border-style: solid;
+}
+/*Đây là thanh chia cách giữa nạp và giúp, và là thanh chia cách ở dưới grid footer */
+.separator {
+    height: 14px;
+    border-style: solid;
+    border-width: 0 1px;
+    border-left-color: #98c8ff;
+    border-right-color: white;
+    margin: 6px 2px;
+}
+/*Đây là phần lấy icon thay đổi trang*/
+.go-to-first-page {
+    background: url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=VVEChlsgTvqFK8Hh3Ckn_nDeQpjc3_brSCMco36wyFPFXl3SqftNXB-IQcY09ssKQbSIN01P7v5f1wJz1LfLh1ekbuFPCsvD-kvNtcAmDANJvlRhtdCTnmR6KOojQQqu7Dl7Uc7MTv0PSSC6lB593UanRQomKiD9UnG5ucYLV_TsCL1XUoXkSqqhYQ3t3UnyFjWwgZijzoUxzyY5GefN0h_A0iRHyaTTOhicgoLn_FE1&t=636876519251431687");
+}
+
+.go-to-before-page {
+    background: url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=6UU7UcGAqsglY2-meZTl7CCPI-x9vsx-ljthaiuTJIQ5hME1tQ1TGHNqP3CqXHRbP_dGXH-RXjyCiOoyOOHzaqOZ5URCweqGPfa8PzinQ65MOuKyAMaL3Wuzvzojbzysh4SDrRM_fnb4mcJpniV4d0tpMSaJcjBDF16bhAVEQN7yo6jCyhj9kVytQrjgO_34EdkLfDEvSD9_VTCTswtRFpkgdJ0SWz3MbdTUjmIL_Tg1&t=636876519251431687");
+}
+
+.go-to-after-page {
+    /*background: url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=o-R_-t_HuggUcvBntdbD7lTlh3LWPYwT_MPho8WxFpUL_BRvmmC4oByK08JvR2e8Ac-NDZieNsf4Jp1B93Bv-HvCc6RZgPFfgp9vqSy5_FEk9NEX8J3I-TOctnPBh5Iad9381Fj-dQyRsJMMohCKBk5JtriXCdvI7TeepfS4itUn3DVOrfhHbH31GzqUfM9R2BWma2VBZslb5VeXC11FBkP9ZJyOJQh-bZZSpKvyMzU1&t=636876519251431687");*/
+    background: url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=nYbCMnxbx_C8yPEa4jTx40vvre5FHBkyWjiDTDTsgnQd3KUM2tl-6KMAISyPqbnGRZfJGZnyNcrPoGYu8rABcRqC0DQGKir6nwqS_rwpy_E5MPMQc1IR5rFje2xpr1pSGwgmfaOmh06odk6hMHGiZR8jBKcNdX3OpnATgse1MCYhyhtwNF817iKNam7BwJKZ7QneTW_7LyAzGPOq1vzQ4Euxl8vswrEmbOsuMAPMbIg1&t=636876519251431687");
+}
+
+.go-to-last-page {
+    /*background: url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=FwX5CAQPb4-vdjZXV_eVzR9vj-JOUsOpc1CfxKPCS1Pss7XGKp7bdod_4e8mXyAXNMRpN02rnbdc6NW_RW76jVrDp0yoiCfj_54sO65pIwFNZq2giQrJPoO4wcncw4OtihhfHnLOvrTP7fopNQ2saNKrhDaP7laE1HtWt98TO_ejl_0ULpvTNxjlNH8lelxjf0Y0hFDMwtPdr-FZNOVElBMPtLTqXAWBodgxKEMozGw1&t=636876519251431687");*/
+    background: url("http://thptmisa1.demo.qlth.vn/Library/WebResource.axd?d=do9zVEz4FkiEcQp4DDlnB1yv_0ZuovpAJeFOWAU7SXjgpUwFAfofwktFHINtjOusWJeHFKYlhYukVfbrVVztgR1vGODH_REuqYViYI65zAvkiT6gzjqJ36_mKClzL6M17R7bryFbE6MunyAzBTTGkJetO5gOxmGxU06eDFX6JLhf1LKjvQIbclk-j4oWjM7HQ9PIspnOe9O1TPLKOGrjLTk8xkMoCZtfRoKOYfSX1dI1&t=636876519251431687");
+}
+
+.grid-footer-right {
+    height: 100%;
+    width: 200px;
+    line-height: 29px;
+    text-align: right;
+    height: 100%;
+    width: 300px;
+    line-height: 29px;
+    text-align: right;
+    padding-right: 10px;
+}

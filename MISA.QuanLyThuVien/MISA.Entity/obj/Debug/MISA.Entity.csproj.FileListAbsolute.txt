@@ -1,0 +1,11 @@
+E:\Project\MISA.QLThuVien\MISA.QuanLyThuVien\MISA.Entity\bin\Debug\MISA.Entity.dll
+E:\Project\MISA.QLThuVien\MISA.QuanLyThuVien\MISA.Entity\bin\Debug\MISA.Entity.pdb
+E:\Project\MISA.QLThuVien\MISA.QuanLyThuVien\MISA.Entity\obj\Debug\MISA.Entity.csprojAssemblyReference.cache
+E:\Project\MISA.QLThuVien\MISA.QuanLyThuVien\MISA.Entity\obj\Debug\MISA.Entity.csproj.CoreCompileInputs.cache
+E:\Project\MISA.QLThuVien\MISA.QuanLyThuVien\MISA.Entity\obj\Debug\MISA.Entity.dll
+E:\Project\MISA.QLThuVien\MISA.QuanLyThuVien\MISA.Entity\obj\Debug\MISA.Entity.pdb
+C:\Users\hung\Downloads\Compressed\MISA.QLThuVien\MISA.QuanLyThuVien\MISA.Entity\bin\Debug\MISA.Entity.dll
+C:\Users\hung\Downloads\Compressed\MISA.QLThuVien\MISA.QuanLyThuVien\MISA.Entity\bin\Debug\MISA.Entity.pdb
+C:\Users\hung\Downloads\Compressed\MISA.QLThuVien\MISA.QuanLyThuVien\MISA.Entity\obj\Debug\MISA.Entity.csprojResolveAssemblyReference.cache
+C:\Users\hung\Downloads\Compressed\MISA.QLThuVien\MISA.QuanLyThuVien\MISA.Entity\obj\Debug\MISA.Entity.dll
+C:\Users\hung\Downloads\Compressed\MISA.QLThuVien\MISA.QuanLyThuVien\MISA.Entity\obj\Debug\MISA.Entity.pdb

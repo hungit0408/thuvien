@@ -1,0 +1,469 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{730A3FB7-EC88-4ADE-8E2C-34C3917D5FFA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyThuVien</RootNamespace>
+    <AssemblyName>QuanLyThuVien</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contents\icon\dot.gif" />
+    <Content Include="Contents\icon\down.gif" />
+    <Content Include="Contents\icon\Export16.png" />
+    <Content Include="Contents\icon\first-disable.gif" />
+    <Content Include="Contents\icon\first-enable.gif" />
+    <Content Include="Contents\icon\last-disable.gif" />
+    <Content Include="Contents\icon\last-enable.gif" />
+    <Content Include="Contents\icon\next-disable.gif" />
+    <Content Include="Contents\icon\next.gif" />
+    <Content Include="Contents\icon\prev-last-off.gif" />
+    <Content Include="Contents\icon\prev-last-on.gif" />
+    <Content Include="Contents\icon\prev-step-off.gif" />
+    <Content Include="Contents\icon\prev-step-on.gif" />
+    <Content Include="Contents\icon\printer16.png" />
+    <Content Include="Contents\icon\question32.png" />
+    <Content Include="Contents\icon\state.png" />
+    <Content Include="Contents\icon\TagHeader-Green.png" />
+    <Content Include="Contents\icon\TagHeader-Orange.png" />
+    <Content Include="Contents\icon\up.gif" />
+    <Content Include="Contents\icon\warning32.png" />
+    <Content Include="Contents\img\supppliers\loading.gif" />
+    <Content Include="CSS\header.css" />
+    <Content Include="CSS\publisher\common\common.css" />
+    <Content Include="CSS\publisher\common\dialog.css" />
+    <Content Include="CSS\publisher\common\grid.css" />
+    <Content Include="CSS\publisher\common\header.css" />
+    <Content Include="CSS\publisher\common\toolbar.css" />
+    <Content Include="CSS\publisher\formPublishAdd.css" />
+    <Content Include="CSS\publisher\lib\bootstrap.min.css" />
+    <Content Include="CSS\publisher\lib\images\ui-icons.png" />
+    <Content Include="CSS\publisher\lib\images\ui-icons_444444_256x240.png" />
+    <Content Include="CSS\publisher\lib\images\ui-icons_555555_256x240.png" />
+    <Content Include="CSS\publisher\lib\images\ui-icons_777620_256x240.png" />
+    <Content Include="CSS\publisher\lib\images\ui-icons_777777_256x240.png" />
+    <Content Include="CSS\publisher\lib\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="CSS\publisher\lib\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="CSS\publisher\lib\jquery-ui.min.css" />
+    <Content Include="CSS\publisher\publisherForm.css" />
+    <Content Include="CSS\publisher\Views\publisher.css" />
+    <Content Include="CSS\reader\contextMenu.css" />
+    <Content Include="CSS\reader\dialog\dialogRegistration.css" />
+    <Content Include="CSS\reader\dialog\dialogState.css" />
+    <Content Include="CSS\reader\grid.css" />
+    <Content Include="CSS\reader\gridTwo.css" />
+    <Content Include="CSS\reader\headContent.css" />
+    <Content Include="CSS\reader\dialog\dialogRegistrationList.css" />
+    <Content Include="CSS\reader\gridOne.css" />
+    <Content Include="CSS\reader\tableFooter.css" />
+    <Content Include="CSS\supplier\common\common.css" />
+    <Content Include="CSS\supplier\common\dialog.css" />
+    <Content Include="CSS\supplier\common\grid.css" />
+    <Content Include="CSS\supplier\common\header.css" />
+    <Content Include="CSS\supplier\common\toolbar.css" />
+    <Content Include="CSS\supplier\lib\bootstrap.min.css" />
+    <Content Include="CSS\supplier\lib\images\ui-icons.png" />
+    <Content Include="CSS\supplier\lib\images\ui-icons_444444_256x240.png" />
+    <Content Include="CSS\supplier\lib\images\ui-icons_555555_256x240.png" />
+    <Content Include="CSS\supplier\lib\images\ui-icons_777620_256x240.png" />
+    <Content Include="CSS\supplier\lib\images\ui-icons_777777_256x240.png" />
+    <Content Include="CSS\supplier\lib\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="CSS\supplier\lib\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="CSS\supplier\lib\jquery-ui.min.css" />
+    <Content Include="CSS\supplier\Views\supplier.css" />
+    <Content Include="CSS\symbols\CategorySymbol\headerCategorySymbol.css" />
+    <Content Include="CSS\symbols\CategorySymbol\styleCategorySymbol.css" />
+    <Content Include="CSS\symbols\CategorySymbol\styleCategorySymbolDialog.css" />
+    <Content Include="CSS\symbols\CategorySymbol\tbodyCategorySymbol.css" />
+    <Content Include="CSS\symbols\CategorySymbol\theadCatagorySymbol.css" />
+    <Content Include="CSS\symbols\styleDialog.css" />
+    <Content Include="Contents\img\symbols\221-point_red.png" />
+    <Content Include="Contents\img\symbols\222-point_green.png" />
+    <Content Include="Contents\img\symbols\add16.png" />
+    <Content Include="Contents\img\symbols\calendar.PNG" />
+    <Content Include="Contents\img\symbols\calendar2.JPG" />
+    <Content Include="Contents\img\symbols\cancel.gif" />
+    <Content Include="Contents\img\symbols\delete_metro.png" />
+    <Content Include="Contents\img\symbols\Disabled16.png" />
+    <Content Include="Contents\img\symbols\edit16.png" />
+    <Content Include="Contents\img\symbols\enable16.png" />
+    <Content Include="Contents\img\symbols\feedback.png" />
+    <Content Include="Contents\img\symbols\filter-ion.png" />
+    <Content Include="Contents\img\symbols\help16.png" />
+    <Content Include="Contents\img\symbols\Import16.png" />
+    <Content Include="Contents\img\symbols\Info_16.png" />
+    <Content Include="Contents\img\symbols\logo25.png" />
+    <Content Include="Contents\img\symbols\muitenxuong.gif" />
+    <Content Include="Contents\img\symbols\notify.png" />
+    <Content Include="Contents\img\symbols\refresh16.png" />
+    <Content Include="Contents\img\symbols\sprite.gif" />
+    <Content Include="Contents\img\symbols\WebResource.gif" />
+    <Content Include="Scripts\base\common.js" />
+    <Content Include="Scripts\base\validate.js" />
+    <Content Include="Scripts\dialog\dialogAddCategorySymbol.js" />
+    <Content Include="Scripts\dialog\dialogPublishers.js" />
+    <Content Include="Scripts\dialog\dialogReader.js" />
+    <Content Include="Scripts\dialog\dialogState.js" />
+    <Content Include="Scripts\dialog\dialogSuppliers.js" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\css\bootstrap-grid.css" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\css\bootstrap-grid.css.map" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\css\bootstrap-grid.min.css" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\css\bootstrap-grid.min.css.map" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\css\bootstrap-reboot.css" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\css\bootstrap-reboot.css.map" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\css\bootstrap-reboot.min.css" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\css\bootstrap.css" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\css\bootstrap.css.map" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\css\bootstrap.min.css" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\css\bootstrap.min.css.map" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\js\bootstrap.bundle.js" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\js\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\js\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\js\bootstrap.js" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\js\bootstrap.js.map" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\js\bootstrap.min.js" />
+    <Content Include="Scripts\lib\bootstrap-4.3.1\js\bootstrap.min.js.map" />
+    <Content Include="Scripts\lib\context-menu\jquery.contextMenu.min.css" />
+    <Content Include="Scripts\lib\context-menu\jquery.contextMenu.min.js" />
+    <Content Include="Scripts\lib\context-menu\jquery.ui.position.js" />
+    <Content Include="Scripts\lib\inputmask\.eslintrc" />
+    <Content Include="Scripts\lib\inputmask\.gitattributes" />
+    <Content Include="Scripts\lib\inputmask\.github\ISSUE_TEMPLATE\bug_report.md" />
+    <Content Include="Scripts\lib\inputmask\.github\ISSUE_TEMPLATE\feature_request.md" />
+    <Content Include="Scripts\lib\inputmask\.gitignore" />
+    <Content Include="Scripts\lib\inputmask\bower.json" />
+    <Content Include="Scripts\lib\inputmask\bundle.jquery.js" />
+    <Content Include="Scripts\lib\inputmask\bundle.js" />
+    <Content Include="Scripts\lib\inputmask\CHANGELOG.md" />
+    <Content Include="Scripts\lib\inputmask\composer.json" />
+    <Content Include="Scripts\lib\inputmask\css\inputmask.css" />
+    <Content Include="Scripts\lib\inputmask\dist\bindings\inputmask.binding.js" />
+    <Content Include="Scripts\lib\inputmask\dist\inputmask.js" />
+    <Content Include="Scripts\lib\inputmask\dist\inputmask.min.js" />
+    <Content Include="Scripts\lib\inputmask\dist\jquery.inputmask.js" />
+    <Content Include="Scripts\lib\inputmask\dist\jquery.inputmask.min.js" />
+    <Content Include="Scripts\lib\inputmask\Gruntfile.js" />
+    <Content Include="Scripts\lib\inputmask\index.html" />
+    <Content Include="Scripts\lib\inputmask\index.js" />
+    <Content Include="Scripts\lib\inputmask\lib\bindings\inputmask.binding.js" />
+    <Content Include="Scripts\lib\inputmask\lib\dependencyLibs\inputmask.dependencyLib.jqlite.js" />
+    <Content Include="Scripts\lib\inputmask\lib\dependencyLibs\inputmask.dependencyLib.jquery.js" />
+    <Content Include="Scripts\lib\inputmask\lib\dependencyLibs\inputmask.dependencyLib.js" />
+    <Content Include="Scripts\lib\inputmask\lib\extensions\inputmask.date.extensions.js" />
+    <Content Include="Scripts\lib\inputmask\lib\extensions\inputmask.extensions.js" />
+    <Content Include="Scripts\lib\inputmask\lib\extensions\inputmask.numeric.extensions.js" />
+    <Content Include="Scripts\lib\inputmask\lib\global\window.js" />
+    <Content Include="Scripts\lib\inputmask\lib\inputmask.js" />
+    <Content Include="Scripts\lib\inputmask\lib\jquery.inputmask.js" />
+    <Content Include="Scripts\lib\inputmask\lib\maskScope.js" />
+    <Content Include="Scripts\lib\inputmask\lib\maskset.js" />
+    <Content Include="Scripts\lib\inputmask\LICENSE.txt" />
+    <Content Include="Scripts\lib\inputmask\nuspecs\Inputmask.nuspec" />
+    <Content Include="Scripts\lib\inputmask\nuspecs\jquery.inputmask.nuspec" />
+    <Content Include="Scripts\lib\inputmask\nuspecs\Readme.txt" />
+    <Content Include="Scripts\lib\inputmask\package.json" />
+    <Content Include="Scripts\lib\inputmask\qunit\index.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\prototypeExtensions.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\qunit.html" />
+    <Content Include="Scripts\lib\inputmask\qunit\simulator.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_alternations.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_attributes.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_base.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_date.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_dynamic.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_escape.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_formatvalidate.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_initialvalue.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_inputeventonly.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_ip.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_jitmasking.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_jquery_inputmask.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_keepStatic.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_multi.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_numeric.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_numericinput.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_option.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_optional.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_paste.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_regex.js" />
+    <Content Include="Scripts\lib\inputmask\qunit\tests_setvalue.js" />
+    <Content Include="Scripts\lib\inputmask\README.md" />
+    <Content Include="Scripts\lib\inputmask\README_android.md" />
+    <Content Include="Scripts\lib\inputmask\README_date.md" />
+    <Content Include="Scripts\lib\inputmask\README_numeric.md" />
+    <Content Include="Scripts\lib\inputmask\README_other.md" />
+    <Content Include="Scripts\lib\inputmask\webpack.buildconfig.js" />
+    <Content Include="Scripts\lib\inputmask\webpack.config.js" />
+    <Content Include="Scripts\lib\inputmask\webpack.jqueryconfig.js" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\AUTHORS.txt" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\external\jquery\jquery.js" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\images\ui-icons_444444_256x240.png" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\images\ui-icons_555555_256x240.png" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\images\ui-icons_777620_256x240.png" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\images\ui-icons_777777_256x240.png" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\index.html" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\jquery-ui.css" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\jquery-ui.js" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\jquery-ui.min.css" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\jquery-ui.min.js" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\jquery-ui.structure.css" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\jquery-ui.structure.min.css" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\jquery-ui.theme.css" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\jquery-ui.theme.min.css" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\LICENSE.txt" />
+    <Content Include="Scripts\lib\jquery-ui-1.12.1\package.json" />
+    <Content Include="Scripts\lib\jquery\jquery-3.3.1.js" />
+    <Content Include="Scripts\lib\jquery\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\lib\jquery\jquery-3.3.1.min.map" />
+    <Content Include="Scripts\lib\jquery\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\lib\jquery\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\lib\jquery\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\lib\jquery\modernizr-2.8.3.js" />
+    <Content Include="Scripts\lib\popper\esm\popper-utils.js" />
+    <Content Include="Scripts\lib\popper\esm\popper-utils.js.map" />
+    <Content Include="Scripts\lib\popper\esm\popper-utils.min.js" />
+    <Content Include="Scripts\lib\popper\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\lib\popper\esm\popper.js" />
+    <Content Include="Scripts\lib\popper\esm\popper.js.map" />
+    <Content Include="Scripts\lib\popper\esm\popper.min.js" />
+    <Content Include="Scripts\lib\popper\esm\popper.min.js.map" />
+    <Content Include="Scripts\lib\popper\popper-utils.js" />
+    <Content Include="Scripts\lib\popper\popper-utils.js.map" />
+    <Content Include="Scripts\lib\popper\popper-utils.min.js" />
+    <Content Include="Scripts\lib\popper\popper-utils.min.js.map" />
+    <Content Include="Scripts\lib\popper\popper.js" />
+    <Content Include="Scripts\lib\popper\popper.js.map" />
+    <Content Include="Scripts\lib\popper\popper.min.js" />
+    <Content Include="Scripts\lib\popper\popper.min.js.map" />
+    <Content Include="Scripts\lib\popper\README.md" />
+    <Content Include="Scripts\lib\popper\umd\popper-utils.js" />
+    <Content Include="Scripts\lib\popper\umd\popper-utils.js.map" />
+    <Content Include="Scripts\lib\popper\umd\popper-utils.min.js" />
+    <Content Include="Scripts\lib\popper\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\lib\popper\umd\popper.js" />
+    <Content Include="Scripts\lib\popper\umd\popper.js.map" />
+    <Content Include="Scripts\lib\popper\umd\popper.min.js" />
+    <Content Include="Scripts\lib\popper\umd\popper.min.js.map" />
+    <Content Include="Scripts\view\categorySymbol.js" />
+    <Content Include="Scripts\view\publisher.js" />
+    <Content Include="Scripts\view\reader.js" />
+    <Content Include="Scripts\view\supplier.js" />
+    <Content Include="Contents\icon\221-point_red.png" />
+    <Content Include="Contents\icon\222-point_green.png" />
+    <Content Include="Contents\icon\add16.png" />
+    <Content Include="Contents\icon\calendar.PNG" />
+    <Content Include="Contents\icon\calendar2.JPG" />
+    <Content Include="Contents\icon\cancel.gif" />
+    <Content Include="Contents\icon\delete_metro.png" />
+    <Content Include="Contents\icon\Disabled16.png" />
+    <Content Include="Contents\icon\Disabled_button.png" />
+    <Content Include="Contents\icon\edit16.png" />
+    <Content Include="Contents\icon\enable16.png" />
+    <Content Include="Contents\icon\filter-ion.png" />
+    <Content Include="Contents\icon\help16.png" />
+    <Content Include="Contents\icon\icon_dialog.gif" />
+    <Content Include="Contents\icon\Import16.png" />
+    <Content Include="Contents\icon\Info_16.png" />
+    <Content Include="Contents\icon\logo25.png" />
+    <Content Include="Contents\icon\muitenxuong.gif" />
+    <Content Include="Contents\icon\notify.png" />
+    <Content Include="Contents\icon\refresh16.png" />
+    <Content Include="Contents\icon\save_button.png" />
+    <Content Include="Contents\icon\sprite.gif" />
+    <Content Include="Contents\icon\WebResource.gif" />
+    <Content Include="Contents\img\header\Asset-app.png" />
+    <Content Include="Contents\img\header\Document-app.png" />
+    <Content Include="Contents\img\header\email-app.png" />
+    <Content Include="Contents\img\header\Equipment-app.png" />
+    <Content Include="Contents\img\header\Fee-app.png" />
+    <Content Include="Contents\img\header\full_arrowdown.png" />
+    <Content Include="Contents\img\header\Health-app.png" />
+    <Content Include="Contents\img\header\Library-app.png" />
+    <Content Include="Contents\img\header\mui_ten.PNG" />
+    <Content Include="Contents\img\header\News-app.png" />
+    <Content Include="Contents\img\header\part-arrowdown.png" />
+    <Content Include="Contents\img\header\Picture-app.png" />
+    <Content Include="Contents\img\header\Student-app.png" />
+    <Content Include="Contents\img\header\Teacher-app.png" />
+    <Content Include="Contents\img\header\Video-app.png" />
+    <Content Include="Contents\img\publisher_dialog\logo25.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Contents\icon\IconSprite.png" />
+    <Content Include="Views\categorySymbol.html" />
+    <Content Include="Views\index.html" />
+    <Content Include="Views\publisher.html" />
+    <Content Include="Views\supplier.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\PublisherController.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ReaderController.cs" />
+    <Compile Include="Controllers\SupplierController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Publishers.cs" />
+    <Compile Include="Models\QLTHDB.cs" />
+    <Compile Include="Models\Reader.cs" />
+    <Compile Include="Models\Supplier.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Scripts\lib\jquery\jquery-3.3.1.intellisense.js" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\lib\popper\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MISA.BL\MISA.BL.csproj">
+      <Project>{fb434273-d78f-4f1c-bb85-801eb638e0cc}</Project>
+      <Name>MISA.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MISA.Common\MISA.Common.csproj">
+      <Project>{e89e86e4-6527-4cc2-983e-7772b8a54bcc}</Project>
+      <Name>MISA.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MISA.Entity\MISA.Entity.csproj">
+      <Project>{ff0fc4dd-db2c-4f27-9d80-c455cbadc4f2}</Project>
+      <Name>MISA.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53480</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53480/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,264 @@
+﻿
+/*create by NDTRUONG (05/05/2019)*/
+/*css dialog form*/
+.inputField, .caution, .category {
+    display: flex;
+    padding: 2px;
+    padding-top: 10px;
+}
+
+thead {
+    left: -1px;
+    right: -2px;
+    border-collapse: collapse;
+}
+
+.textField {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "Segoe UI";
+    color: rgba(0,0,0,0.87);
+    padding-top: 3px;
+}
+
+span#ui-id-1 {
+    font-size: 12px;
+    width: 38%;
+    height: 22px;
+}
+
+.inputField-text {
+    line-height: 22px;
+    font-size: 12px;
+    margin-left: -15px;
+    font-family: "Segoe UI";
+    color: rgba(0,0,0,0.87);
+}
+
+.datetime {
+    display: flex;
+    width: 220px;
+}
+
+.datetimeip.col-6 :hover {
+    cursor: pointer;
+}
+
+input#datetimeRange, input#datetimeRange1, input#datetimeRange2 {
+    height: 18px;
+    width: 80px;
+    padding: 2px 5px;
+    font-size: 12px;
+    margin-left: -59px;
+}
+
+.textCategory {
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+.wrap-select {
+    width: 80px;
+    overflow: hidden;
+}
+
+    .wrap-select select {
+        margin-top: 3px;
+        margin-left: 16px;
+        width: 93px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+.categoryIcons {
+    background-image: url('../icons/muitenxuong.gif');
+    margin-top: 3px;
+    width: 17px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+.category {
+    padding: 3px;
+    padding-top: 10px;
+}
+
+.caution {
+    font-size: 14px;
+    padding: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.cautionIcon {
+    background-image: url('../icons/Info_16.png');
+    width: 18px;
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.cautionText1 {
+    font-weight: bold;
+}
+
+.cautionText2 {
+    margin-left: 6px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.theadStudentTable {
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+.btnAddRowText {
+    font-size: 15px;
+    padding: 7px;
+    padding-left: 2px;
+}
+
+.btnAddRowIcon {
+    background-image: url('../icons/add16.png');
+    width: 18px;
+    height: 16px;
+    margin-top: 8px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+}
+
+tr {
+}
+
+.column-dialog-title {
+    height: 22px;
+}
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable {
+    border: 3px solid #e9e9e9;
+}
+
+div#formReaderDetail {
+    background-color: #ffffff;
+}
+
+button.btnCheck-dialog.ui-button.ui-corner-all.ui-widget {
+    font-size: 12px;
+}
+
+button.ui-button.ui-corner-all.ui-widget {
+    font-size: 12px;
+}
+
+/* chỉnh bảng trong dialog đăng ký theo danh sách học sinh*/
+th.thStudent {
+    width: 30%;
+}
+
+th.thIDCard {
+    width: 13%;
+}
+
+th.thStudentCode {
+    width: 19%;
+}
+
+th.thClass {
+    width: 8%;
+}
+
+th.thGender {
+    width: 12%;
+}
+
+th.thBirthday {
+    width: 16%;
+}
+
+th.thNone {
+    width: 2%;
+}
+
+div#ui-datepicker-div {
+    font-size: 12px;
+}
+
+.btnAddRow, .datetimeip {
+    display: flex;
+}
+/*chỉnh tiêu đề dialog*/
+.ui-dialog-title {
+    background-image: url('../icons/logo25.png');
+    width: 20px;
+    height: 16px;
+    padding-top: 4px;
+    text-align: right;
+    background-repeat: no-repeat;
+}
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-dialog-buttons.ui-draggable.ui-resizable {
+    background-color: #e9e9e9;
+    border: 1px solid #ccc;
+}
+
+.ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix.ui-draggable-handle {
+    border: none;
+}
+
+
+/*chỉnh button*/
+button.btnCheck-dialog {
+    height: 27px;
+}
+
+button {
+    height: 27px;
+}
+
+img.ui-datepicker-trigger {
+    padding-bottom: 1px;
+}
+
+.ui-dialog-buttonset {
+    font-size: 12px;
+}
+
+button.ui-dialog-titlebar-close {
+    background-image: url('../icons/WebResource.gif');
+    width: 15px;
+    height: 15px;
+    border: 1px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    width: 15px;
+    height: 15px;
+}
+/*chỉnh tbody bảng trong dialog*/
+.tbodyStudentTable {
+    width: 100%;
+    height: 160px;
+    border: 1px solid #ccc;
+}
+
+/*chỉnh dialog content*/
+div#formReaderDetail {
+    overflow: hidden;
+}
+
+div#dlgResgisterReaderList {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix {
+    border-top: 1px solid gray;
+}
+/*chỉnh datetimepicker*/
+table.ui-datepicker-calendar tr {
+    width: 24px;
+}

@@ -1,0 +1,1485 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Phần mềm quản lý trường họ</title>
+
+    <!--Thư viện-->
+    <link href="../Scripts/lib/bootstrap-4.3.1/css/bootstrap.css" rel="stylesheet" />
+    <link href="../Scripts/lib/bootstrap-4.3.1/css/bootstrap-grid.css" fel="stylesheet" />
+    <link href="../Scripts/lib/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../Scripts/lib/jquery-ui-1.12.1/jquery-ui.theme.css" rel="stylesheet" />
+    <!--File css-->
+    <link href="../CSS/header.css" rel="stylesheet" />
+    <link href="../CSS/reader/grid.css" rel="stylesheet" />
+    <link href="../CSS/reader/gridOne.css" rel="stylesheet" />
+    <link href="../CSS/reader/gridTwo.css" rel="stylesheet" />
+    <link href="../CSS/reader/headContent.css" rel="stylesheet" />
+    <link href="../CSS/reader/tableFooter.css" rel="stylesheet" />
+    <!--File css thư viện popper-->
+    <script src="../Scripts/lib/popper/popper.js"></script>
+    <script src="../Scripts/lib/popper/umd/popper.js"></script>
+    <script src="../Scripts/lib/popper/esm/popper.js"></script>
+
+    <!--File css dialog-->
+    <link href="/CSS/reader/dialog/dialogRegistration.css" rel="stylesheet" />
+    <link href="/CSS/reader/dialog/dialogRegistrationList.css" rel="stylesheet" />
+    <link href="/CSS/reader/dialog/dialogState.css" rel="stylesheet" />
+</head>
+<body style="overflow-y:hidden">
+    <div class="container-fluid">
+
+        <!--TUẤN SỬA CHỖ NÀY-->
+        <div class="header">
+            <div class="top-header">
+                <div class="main-logo"></div>
+                <div class="select-library">Thư viện</div>
+                <div class="select-list-header">
+                    <img src="../Contents/img/header/mui_ten.PNG" />
+                </div>
+
+                <!--Menu chọn chức năng, DQTuan 05/05/2019-->
+                <div class="list-menu-header">
+                    <div class="btnWebsite">
+                        <div class="img-list-menu-header img-btnWebsite">
+                            <img src="../Contents/img/header/News-app.png" />
+                        </div>
+                        <div class="text-btn-header">Website</div>
+                    </div>
+                    <div class="btnStudent">
+                        <div class="img-list-menu-header img-btnStudent">
+                            <img src="../Contents/img/header/Student-app.png" />
+                        </div>
+                        <div class="text-btn-header">Học sinh</div>
+                    </div>
+                    <div class="btnManager">
+                        <div class="img-list-menu-header img-btnManager">
+                            <img src="../Contents/img/header/Teacher-app.png" />
+                        </div>
+                        <div class="text-btn-header">Cán bộ, CCVC</div>
+                    </div>
+                    <div class="btnTool">
+                        <div class="img-list-menu-header img-btnTool">
+                            <img src="../Contents/img/header/Equipment-app.png" />
+                        </div>
+                        <div class="text-btn-header">Thiết bị</div>
+                    </div>
+                    <div class="btnLibrary">
+                        <div class="img-list-menu-header img-btnLibrary">
+                            <img src="../Contents/img/header/Library-app.png" />
+                        </div>
+                        <div class="text-btn-header">Thư viện</div>
+                    </div>
+                    <div class="btnGet">
+                        <div class="img-list-menu-header img-btnGet">
+                            <img src="../Contents/img/header/Fee-app.png" />
+                        </div>
+                        <div class="text-btn-header">Khoản thu</div>
+                    </div>
+                    <div class="btnHopital">
+                        <div class="img-list-menu-header img-btnHopital">
+                            <img src="../Contents/img/header/Health-app.png" />
+                        </div>
+                        <div class="text-btn-header">Y tế</div>
+                    </div>
+                    <div class="btnMail">
+                        <div class="img-list-menu-header img-btnMail">
+                            <img src="../Contents/img/header/email-app.png" />
+                        </div>
+                        <div class="text-btn-header">Văn thư</div>
+                    </div>
+                    <div class="btnDocument">
+                        <div class="img-list-menu-header img-btnDocument">
+                            <img src="../Contents/img/header/Document-app.png" />
+                        </div>
+                        <div class="text-btn-header text-btn-header">Tài liệu</div>
+                    </div>
+                    <div class="btnImgs">
+                        <div class="img-list-menu-header img-btnImgs">
+                            <img src="../Contents/img/header/Picture-app.png" />
+                        </div>
+                        <div class="text-btn-header">Kho ảnh</div>
+                    </div>
+                    <div class="btnFilms">
+                        <div class="img-list-menu-header img-btnFilms">
+                            <img src="../Contents/img/header/Video-app.png" />
+                        </div>
+                        <div class="text-btn-header">Kho phim</div>
+                    </div>
+                    <div class="btnAsset">
+                        <div class="img-list-menu-header img-btnAsset">
+                            <img src="../Contents/img/header/Asset-app.png" />
+                        </div>
+                        <div class="text-btn-header">Tài sản</div>
+                    </div>
+                </div>
+                <div class="user-info-help"></div>
+                <div class="user-info-full-arrowdown">
+                    <img src="../Contents/img/header/full_arrowdown.png" />
+                </div>
+                <div class="main-user-info"> Trường THPT MISA 1 - Trần Thị Mai</div>
+            </div>
+            <div class="menu-header">
+                <div class="menu-item">
+                    <div class="ul-menu-item-header">
+                        <div class="menu-item-header lbdestop">
+                            <a class="text-btn-item" href="#">Bàm làm việc</a>
+                        </div>
+                        <div class="menu-item-header lbbook">
+                            <a class="text-btn-item" href="#">Sách</a>
+                            <span class="part-arrowdown"><img src="../Contents/img/header/part-arrowdown.png" /></span>
+                            <div class="hide-header-menu hide-header-menu-book">
+                                <div class="hide-header-menu-item"><a href="#">Danh sách sách</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Khai báo số lượng sách ban đầu</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Nhập sách</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Nhập sách</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Xuất sách</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Kiểm kê sách</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-item-header lbnewspaper">
+                            <a class="text-btn-item" href="#">Báo, Tạp chí</a>
+                            <span class="part-arrowdown"><img src="../Contents/img/header/part-arrowdown.png" /></span>
+                            <div class="hide-header-menu hide-header-menu-newspaper">
+                                <div class="hide-header-menu-item"><a href="#">Danh sách báo, tạp chí</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Đăng ký báo, tạp chí</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-item-header lbcirculate">
+                            <a class="text-btn-item" href="#">Lưu thông</a>
+                            <span class="part-arrowdown"><img src="../Contents/img/header/part-arrowdown.png" /></span>
+                            <div class="hide-header-menu hide-header-menu-circulate">
+                                <div class="hide-header-menu-item"><a href="#">Lập phiếu mượn</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Trả sách</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Danh sách phiếu mượn</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Ghi nhận số lượt bạn đọc tại chỗ</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-item-header lbreader highlight-header">
+                            <a class="text-btn-item" href="../Views/index.html">Bạn đọc</a>
+                        </div>
+                        <div class="menu-item-header lbdictionary">
+                            <a class="text-btn-item" href="#">Danh mục</a>
+                            <span class="part-arrowdown"><img src="../Contents/img/header/part-arrowdown.png" /></span>
+                            <div class="hide-header-menu hide-header-menu-dictionary">
+                                <div class="hide-header-menu-item">
+                                    <a href="../Views/Publisher.html">Nhà xuất bản</a>
+                                </div>
+                                <div class="hide-header-menu-item">
+                                    <a href="../Views/categorySymbol.html">Kí hiệu phân loại</a>
+                                </div>
+                                <div class="hide-header-menu-item"><a href="#">Danh sách mẫu trộn</a></div>
+                                <div class="hide-header-menu-item"><a href="../Views/supplier.html">Nhà cung cấp</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-item-header lbsetting">
+                            <a class="text-btn-item" href="#">Thiết lập</a>
+                            <span class="part-arrowdown"><img src="../Contents/img/header/part-arrowdown.png" /></span>
+                            <div class="hide-header-menu hide-header-menu-setting">
+                                <div class="hide-header-menu-item"><a href="#">Thời gian học/Lịch nghỉ lễ</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Nội quy thư viện</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Kí hiệu xếp giá</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Đánh số đăng ký cá biệt</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Thông tin đơn vị</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Thông tin năm học</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Nhật ký truy cập</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-item-header lbreport">
+                            <a class="text-btn-item" href="#">Báo cáo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="year-label">
+                    <div><span>Năm học: </span></div>
+                    <div>
+                        <!--Sửa lable năm DQTuan 05/05/2019-->
+                        <select class="select-year-label">
+                            <option value="2018-2019">2018-2019</option>
+                            <option value="2017-2018">2017-2018</option>
+                            <option value="2016-2017">2016-2017</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--SƠN SỬA LẠI BẢNG 7/5/2019-->
+        <div class="content">
+            <div class="content-header">
+                <p>Danh sách bạn đọc</p>
+                <div class="div-feedback">
+                    <button id="btnFeedback1" title="Hãy giúp chúng tôi cải tiến màn hình này những phản hồi của bạn sẽ giúp chúng tôi cải tiến ứng dụng ngày càng tốt hơn">
+                        <span class="ui-btn-text">Phản hồi</span>
+                    </button>
+                </div>
+                <button value="student" id="btnStudent" class="btn-tab-active">Học sinh</button>
+                <button value="teacher" id="btnTeacher">Giáo viên</button>
+            </div>
+
+
+            <!--Grid Bạn đọc học sinh-->
+            <div id="grid-reader-student" style="display:none" class="visible-grid">
+                <!--Phần Grid - Master-->
+                <div class="grid-one show-grid">
+                    <div class="toolbar">
+                        <div id="btnregistration" class="toolbar-item btn-group" title="Ctrl+Alt+N">
+                            <div class="btn-dk btn-student">
+                                <div class="toolbar-item-icons toolbar-item-icons-registration"></div>
+                                <div class="toolbar-item-text" style="font-size: 12px">Đăng kí bạn đọc</div>
+                            </div>
+                            <div class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></div>
+                            <div class="dropdown-menu dropdown-menu-left">
+                                <span class="dropdown-item dropdown-item-reg btn-student">Đăng kí bạn đọc từ danh sách học sinh</span>
+                            </div>
+                        </div>
+                        <div id="" class="toolbar-item btnEdit btn-student" title="Ctrl+E">
+                            <div class="toolbar-item-icons toolbar-item-icons-edit"></div>
+                            <div class="toolbar-item-text">Sửa</div>
+                        </div>
+                        <div id="" class="toolbar-item btnDelete btn-student" title="Ctrl+D">
+                            <div class="toolbar-item-icons toolbar-item-icons-delete"></div>
+                            <div class="toolbar-item-text">Xóa</div>
+                        </div>
+                        <div id="" class="toolbar-item btnLoad btn-student" title="Ctrl+R">
+                            <div class="toolbar-item-icons toolbar-item-icons-loaded"></div>
+                            <div class="toolbar-item-text">Nạp</div>
+                        </div>
+                        <div id="" class="toolbar-item btnImport btn-student">
+                            <div class="toolbar-item-icons toolbar-item-icons-import"></div>
+                            <div class="toolbar-item-text">Nhập khẩu</div>
+                        </div>
+                        <div id="" class="toolbar-item btnExport btn-student">
+                            <div class="toolbar-item-icons toolbar-item-icons-export"></div>
+                            <div class="toolbar-item-text">Xuất khẩu</div>
+                        </div>
+                        <div id="" class="toolbar-item btnPrintf btn-student">
+                            <div class="toolbar-item-icons toolbar-item-icons-printf"></div>
+                            <div class="toolbar-item-text">In</div>
+                        </div>
+                        <div id="" class="toolbar-item btnHelp btn-student" title="Ctrl+H">
+                            <div class="toolbar-item-icons toolbar-item-icons-help"></div>
+                            <div class="toolbar-item-text">Giúp</div>
+                        </div>
+                    </div>
+                    <!--Sơn sửa grid-table phần filter 06/05/2019-->
+                    <div class="grid-table">
+                        <table id="tblMember" recordId="MemberID">
+                            <thead>
+                                <tr>
+                                    <th fieldName="RowNumber">
+                                        <div fieldData="RowNumber" style="margin-bottom: 19px;">
+                                            <div class="column-title">STT</div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="BookReaderCode">
+                                        <div fieldData="BookReaderCode" dataType="string">
+                                            <div class="column-title" msort="normal">Mã thẻ<span class="show-filter-normal"></span></div>
+                                            <div class="column-filter">
+                                                <input class="filter-input" />
+                                                <div class="dropdown">
+                                                    <a href="#" class="filter-img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <div class="dropdown-item remove-filter"><span></span><span class="item">Xóa điều kiện lọc</span></div>
+                                                        <div class="dropdown-item dot" filter="!"><span class="item">Chứa</span></div>
+                                                        <div class="dropdown-item" filter="="><span class="item">Bằng</span></div>
+                                                        <div class="dropdown-item" filter="+"><span class="item">Bắt đầu với</span></div>
+                                                        <div class="dropdown-item" filter="-"><span class="item">Kết thúc với</span></div>
+                                                        <div class="dropdown-item" filter="!="><span class="item">Không chứa</span></div>
+                                                        <div class="dropdown-item" filter="*"><span class="item">Trống</span></div>
+                                                        <div class="dropdown-item" filter="!*"><span class="item">Không trống</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="FullName">
+                                        <div fieldData="FullName" dataType="string">
+                                            <div class="column-title" msort="normal">Tên bạn đọc<span class="show-filter-normal"></span></div>
+                                            <div class="column-filter">
+                                                <input class="filter-input" />
+                                                <div class="dropdown">
+                                                    <a href="#" class="filter-img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <div class="dropdown-item remove-filter"><span></span><span class="item">Xóa điều kiện lọc</span></div>
+                                                        <div class="dropdown-item dot" filter="!"><span class="item">Chứa</span></div>
+                                                        <div class="dropdown-item" filter="="><span class="item">Bằng</span></div>
+                                                        <div class="dropdown-item" filter="+"><span class="item">Bắt đầu với</span></div>
+                                                        <div class="dropdown-item" filter="-"><span class="item">Kết thúc với</span></div>
+                                                        <div class="dropdown-item" filter="!="><span class="item">Không chứa</span></div>
+                                                        <div class="dropdown-item" filter="*"><span class="item">Trống</span></div>
+                                                        <div class="dropdown-item" filter="!*"><span class="item">Không trống</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="ClassOrOrganizationUnit">
+                                        <div fieldData="ClassOrOrganizationUnit" dataType="string">
+                                            <div class="column-title" msort="normal">Lớp<span class="show-filter-normal"></span></div>
+                                            <div class="column-filter">
+                                                <input class="filter-input" />
+                                                <div class="dropdown">
+                                                    <a href="#" class="filter-img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <div class="dropdown-item remove-filter"><span></span><span class="item">Xóa điều kiện lọc</span></div>
+                                                        <div class="dropdown-item dot" filter="!"><span class="item">Chứa</span></div>
+                                                        <div class="dropdown-item" filter="="><span class="item">Bằng</span></div>
+                                                        <div class="dropdown-item" filter="+"><span class="item">Bắt đầu với</span></div>
+                                                        <div class="dropdown-item" filter="-" ><span class="item">Kết thúc với</span></div>
+                                                        <div class="dropdown-item"  filter="!="><span class="item">Không chứa</span></div>
+                                                        <div class="dropdown-item" filter="*"><span class="item">Trống</span></div>
+                                                        <div class="dropdown-item" filter="!*"><span class="item">Không trống</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="Gender">
+                                        <div fieldData="Gender" dataType="string">
+                                            <div class="column-title" msort="normal">Giới tính<span class="show-filter-normal"></span></div>
+                                            <div class="column-filter">
+                                                <input class="filter-input" />
+                                                <div class="dropdown">
+                                                    <a href="#" class="filter-img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <div class="dropdown-item remove-filter"><span class="item">Xóa điều kiện lọc</span></div>
+                                                        <div class="dropdown-item dot" filter="="><span class="item">Bằng</span></div>
+                                                        <div class="dropdown-item" filter="#"><span class="item">Khác</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="BirthDate">
+                                        <div fieldData="BirthDate" datatype="date">
+                                            <div class="column-title" msort="normal">Ngày sinh<span class="show-filter-normal"></span></div>
+                                            <div class="column-filter">
+                                                <input class="filter-input filter-birthday" />
+                                                <div class="dropdown">
+                                                    <a href="#" class="filter-img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <div class="dropdown-item remove-filter"><span class="item">Xóa điều kiện lọc</span></div>
+                                                        <div class="dropdown-item dot" filter="="><span class="item">Bằng</span></div>
+                                                        <div class="dropdown-item" filter="<"><span class="item">Nhỏ hơn</span></div>
+                                                        <div class="dropdown-item" filter="<="><span class="item">Nhỏ hơn hoặc bằng</span></div>
+                                                        <div class="dropdown-item" filter=">"><span class="item">Lớn hơn</span></div>
+                                                        <div class="dropdown-item" filter=">="><span class="item">Lớn hơn hoặc bằng</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="IssueDate">
+                                        <div fieldData="IssueDate" dataType="date">
+                                            <div class="column-title" msort="normal">Ngày cấp<span class="show-filter-normal"></span></div>
+                                            <div class="column-filter">
+                                                <input class="filter-input filter-dateallocated" />
+                                                <div class="dropdown">
+                                                    <a href="#" class="filter-img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <div class="dropdown-item remove-filter"><span class="item">Xóa điều kiện lọc</span></div>
+                                                        <div class="dropdown-item dot" filter="="><span class="item">Bằng</span></div>
+                                                        <div class="dropdown-item" filter="<"><span class="item">Nhỏ hơn</span></div>
+                                                        <div class="dropdown-item" filter="<="><span class="item">Nhỏ hơn hoặc bằng</span></div>
+                                                        <div class="dropdown-item" filter=">"><span class="item">Lớn hơn</span></div>
+                                                        <div class="dropdown-item" filter=">="><span class="item">Lớn hơn hoặc bằng</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="ValidityDate">
+                                        <div fieldData="ValidityDate" dataType="date">
+                                            <div class="column-title" msort="normal">Hiệu lực<span class="show-filter-normal"></span></div>
+                                            <div class="column-filter">
+                                                <input  class="filter-input filter-dateeffect" />
+                                                <div class="dropdown">
+                                                    <a href="#" class="filter-img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <div class="dropdown-item remove-filter"><span class="item">Xóa điều kiện lọc</span></div>
+                                                        <div class="dropdown-item dot" filter="="><span class="item">Bằng</span></div>
+                                                        <div class="dropdown-item" filter="<"><span class="item">Nhỏ hơn</span></div>
+                                                        <div class="dropdown-item" filter="<="><span class="item">Nhỏ hơn hoặc bằng</span></div>
+                                                        <div class="dropdown-item" filter=">"><span class="item">Lớn hơn</span></div>
+                                                        <div class="dropdown-item" filter=">="><span class="item">Lớn hơn hoặc bằng</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="ExpiryDate">
+                                        <div fieldData="ExpiryDate" dataType="date">
+                                            <div class="column-title" msort="normal">Ngày hết hạn<span class="show-filter-normal"></span></div>
+                                            <div class="column-filter">
+                                                <input class="filter-input filter-dateexpired" />
+                                                <div class="dropdown">
+                                                    <a href="#" class="filter-img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <div class="dropdown-item remove-filter"><span class="item">Xóa điều kiện lọc</span></div>
+                                                        <div class="dropdown-item dot" filter="="><span class="item">Bằng</span></div>
+                                                        <div class="dropdown-item" filter="<"><span class="item">Nhỏ hơn</span></div>
+                                                        <div class="dropdown-item" filter="<="><span class="item">Nhỏ hơn hoặc bằng</span></div>
+                                                        <div class="dropdown-item" filter=">"><span class="item">Lớn hơn</span></div>
+                                                        <div class="dropdown-item" filter=">="><span class="item">Lớn hơn hoặc bằng</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-tbody-reader tbody-student"></tbody>
+                        </table>
+                    </div>
+                    <!--Phần table-footer-->
+                    <div class="grid-footer">
+                        <div class="grid-footer-left-one">
+                            <div class="prev">
+                                <div class="prev-on" style="display:none">
+                                    <span class="prev-last">
+                                        <img src="../Contents/icon/prev-last-on.gif" />
+                                    </span>
+                                    <span class="prev-step">
+                                        <img src="../Contents/icon/prev-step-on.gif" />
+                                    </span>
+                                </div>
+                                <div class="prev-off">
+                                    <span>
+                                        <img src="../Contents/icon/prev-last-off.gif" />
+                                    </span>
+                                    <span>
+                                        <img src="../Contents/icon/prev-step-off.gif" />
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="separator"></span>
+                            <div>
+                                <span style="margin: -2px 1px 0 3px">Trang</span>
+                                <span class="current-display-page"><input type="text" name="name" value="1" /></span>
+                                <span style="margin: -1px 4px 0 0;">trên</span>
+                                <span class="total-page">20</span>
+                            </div>
+                            <span class="separator"></span>
+                            <div class="next">
+                                <div class="next-on">
+                                    <span class="next-step">
+                                        <img src="../Contents/icon/next.gif" />
+                                    </span>
+                                    <span class="next-last">
+                                        <img src="../Contents/icon/last-enable.gif" />
+                                    </span>
+                                </div>
+                                <div class="next-off" style="display:none">
+                                    <span>
+                                        <img src="../Contents/icon/next-disable.gif" />
+                                    </span>
+                                    <span>
+                                        <img src="../Contents/icon/last-disable.gif" />
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="separator"></span>
+                            <div class="amount-record">
+                                <span style="margin: 1px 0 0 2px;">Số bản ghi</span>
+                                <div class="page-size">
+                                    <input type="text" name="name" disabled value="50" />
+                                    <div class="select-page-size hide-on-click">
+                                        <div><span>10</span></div>
+                                        <div><span>20</span></div>
+                                        <div class="page-size-click"><span>50</span></div>
+                                        <div><span>100</span></div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-icon icon-selection toggle-btn"></div>
+                            </div>
+                        </div>
+                        <div class="grid-footer-right float-right">
+                            <span>Hiển thị</span> <span class="from-record">1</span> - <span class="to-record">50</span> trên <span class="total-record">100</span> <span>kết quả</span>
+                        </div>
+                    </div>
+                </div>
+                <!--PHẦN CỦA CHI TIẾT PHIẾU MƯỢN-->
+                <p>Lịch sử mượn trả</p>
+                <!--Phần Grid - Detail-->
+                <div class="grid-two show-grid">
+                    <div class="grid-table-history ">
+                        <table id="tblHistory" recordId="MemberID">
+                            <thead>
+                                <tr>
+                                    <th fieldName="DKCBCode">
+                                        <div fieldData="DKCBCode" dataType="string">
+                                            <div class="column-title" hsort="normal">Số ĐKCB<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="ISBNCode" dataType="string">
+                                        <div fieldData="ISBNCode">
+                                            <div class="column-title" hsort="normal">Mã ISBN<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="BookTitle" dataType="string">
+                                        <div fieldData="BookTitle">
+                                            <div class="column-title" hsort="normal">Nhan đề<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="BorrowingBookCode" dataType="string">
+                                        <div fieldData="BorrowingBookCode">
+                                            <div class="column-title" hsort="normal">Số phiếu<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="Author" dataType="string">
+                                        <div fieldData="Author">
+                                            <div class="column-title" hsort="normal">Tác giả<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+
+                                    <th fieldName="BorrowingDate" dataType="date">
+                                        <div fieldData="BorrowingDate" dataType="Date">
+                                            <div class="column-title" hsort="normal">Ngày mượn<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="DueDate">
+                                        <div fieldData="DueDate" dataType="Date">
+                                            <div class="column-title" hsort="normal">Ngày hẹn trả<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="ReturnDate">
+                                        <div fieldData="ReturnDate" dataType="Date">
+                                            <div class="column-title" hsort="normal">Ngày trả/báo mất<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="ReturnBookState" dataType="string">
+                                        <div fieldData="ReturnBookState" dataType="Date">
+                                            <div class="column-title" hsort="normal">Trạng thái<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-tbody-history"></tbody>
+                        </table>
+                    </div>
+                    <!--Phần table-footer-->
+                    <div class="grid-footer">
+                        <div class="grid-footer-left-one">
+                            <div class="prev">
+                                <div class="prev-on" style="display:none">
+                                    <span class="prev-last">
+                                        <img src="../Contents/icon/prev-last-on.gif" />
+                                    </span>
+                                    <span class="prev-step">
+                                        <img src="../Contents/icon/prev-step-on.gif" />
+                                    </span>
+                                </div>
+                                <div class="prev-off">
+                                    <span>
+                                        <img src="../Contents/icon/prev-last-off.gif" />
+                                    </span>
+                                    <span>
+                                        <img src="../Contents/icon/prev-step-off.gif" />
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="separator"></span>
+                            <div>
+                                <span style="margin: -2px 1px 0 3px">Trang</span>
+                                <span class="current-display-page"><input type="text" name="name" value="1" /></span>
+                                <span style="margin: -1px 4px 0 0;">trên</span>
+                                <span class="total-page">20</span>
+                            </div>
+                            <span class="separator"></span>
+                            <div class="next">
+                                <div class="next-on">
+                                    <span class="next-step">
+                                        <img src="../Contents/icon/next.gif" />
+                                    </span>
+                                    <span class="next-last">
+                                        <img src="../Contents/icon/last-enable.gif" />
+                                    </span>
+                                </div>
+                                <div class="next-off" style="display:none">
+                                    <span>
+                                        <img src="../Contents/icon/next-disable.gif" />
+                                    </span>
+                                    <span>
+                                        <img src="../Contents/icon/last-disable.gif" />
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="separator"></span>
+                            <div class="amount-record">
+                                <span style="margin: 1px 0 0 2px;">Số bản ghi</span>
+                                <div class="page-size">
+                                    <input type="text" name="name" disabled value="50" />
+                                    <div class="select-page-size hide-on-click">
+                                        <div><span>10</span></div>
+                                        <div><span>20</span></div>
+                                        <div class="page-size-click"><span>50</span></div>
+                                        <div><span>100</span></div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-icon icon-selection toggle-btn"></div>
+                            </div>
+                        </div>
+                        <div class="grid-footer-right float-right">
+                            <span>Hiển thị</span> <span class="from-record">1</span> - <span class="to-record">50</span> trên <span class="total-record">100</span> <span>kết quả</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--Grid Bạn đọc giáo viên-->
+            <div id="grid-reader-teacher" style="display:none">
+                <!--Phần Grid - Master-->
+                <div class="grid-one">
+                    <div class="toolbar">
+                        <div id="btnregistration" class="toolbar-item btn-group" title="Ctrl+Alt+N">
+                            <div class="btn-dk btn-teacher">
+                                <div class="toolbar-item-icons toolbar-item-icons-registration"></div>
+                                <div class="toolbar-item-text" style="font-size: 12px">Đăng kí bạn đọc</div>
+                            </div>
+                            <div class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></div>
+                            <div class="dropdown-menu dropdown-menu-left">
+                                <span class="dropdown-item dropdown-item-reg btn-teacher">Đăng kí bạn đọc từ danh sách học sinh</span>
+                            </div>
+                        </div>
+                        <div id="" class="toolbar-item btnEdit btn-teacher" title="Ctrl+E">
+                            <div class="toolbar-item-icons toolbar-item-icons-edit"></div>
+                            <div class="toolbar-item-text">Sửa</div>
+                        </div>
+                        <div id="" class="toolbar-item btnDelete btn-teacher" title="Ctrl+D">
+                            <div class="toolbar-item-icons toolbar-item-icons-delete"></div>
+                            <div class="toolbar-item-text">Xóa</div>
+                        </div>
+                        <div id="" class="toolbar-item btnLoad btn-teacher" title="Ctrl+R">
+                            <div class="toolbar-item-icons toolbar-item-icons-loaded"></div>
+                            <div class="toolbar-item-text">Nạp</div>
+                        </div>
+                        <div id="" class="toolbar-item btnImport btn-teacher">
+                            <div class="toolbar-item-icons toolbar-item-icons-import"></div>
+                            <div class="toolbar-item-text">Nhập khẩu</div>
+                        </div>
+                        <div id="" class="toolbar-item btnExport btn-teacher">
+                            <div class="toolbar-item-icons toolbar-item-icons-export"></div>
+                            <div class="toolbar-item-text">Xuất khẩu</div>
+                        </div>
+                        <div id="" class="toolbar-item btnPrintf btn-teacher ">
+                            <div class="toolbar-item-icons toolbar-item-icons-printf"></div>
+                            <div class="toolbar-item-text">In</div>
+                        </div>
+                        <div id="" class="toolbar-item btnHelp btn-teacher" title="Ctrl+H">
+                            <div class="toolbar-item-icons toolbar-item-icons-help"></div>
+                            <div class="toolbar-item-text">Giúp</div>
+                        </div>
+                    </div>
+                    <!--Sơn sửa grid-table phần filter 06/05/2019-->
+                    <div class="grid-table">
+                        <table id="tblMember" recordId="MemberID">
+                            <thead>
+                                <tr>
+                                    <th fieldName="RowNumber">
+                                        <div fieldData="RowNumber" dataTyep="number" style="margin-bottom: 19px;">
+                                            <div class="column-title">STT</div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="BookReaderCode">
+                                        <div fieldData="BookReaderCode" datatype="string">
+                                            <div class="column-title" msort="normal">Mã thẻ<span class="show-filter-normal"></span></div>
+                                            <div class="column-filter">
+                                                <input class="filter-input" />
+                                                <div class="dropdown">
+                                                    <a href="#" class="filter-img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <div class="dropdown-item remove-filter"><span></span><span class="item">Xóa điều kiện lọc</span></div>
+                                                        <div class="dropdown-item dot" filter="!"><span class="item">Chứa</span></div>
+                                                        <div class="dropdown-item" filter="="><span class="item">Bằng</span></div>
+                                                        <div class="dropdown-item" filter="+"><span class="item">Bắt đầu với</span></div>
+                                                        <div class="dropdown-item" filter="-"><span class="item">Kết thúc với</span></div>
+                                                        <div class="dropdown-item" filter="!="><span class="item">Không chứa</span></div>
+                                                        <div class="dropdown-item" filter="*"><span class="item">Trống</span></div>
+                                                        <div class="dropdown-item" filter="!*"><span class="item">Không trống</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="FullName">
+                                        <div fieldData="FullName" datatype="string">
+                                            <div class="column-title" msort="normal">Tên bạn đọc<span class="show-filter-normal"></span></div>
+                                            <div class="column-filter">
+                                                <input class="filter-input" />
+                                                <div class="dropdown">
+                                                    <a href="#" class="filter-img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <div class="dropdown-item remove-filter"><span></span><span class="item">Xóa điều kiện lọc</span></div>
+                                                        <div class="dropdown-item dot" filter="!"><span class="item">Chứa</span></div>
+                                                        <div class="dropdown-item" filter="="><span class="item">Bằng</span></div>
+                                                        <div class="dropdown-item" filter="+"><span class="item">Bắt đầu với</span></div>
+                                                        <div class="dropdown-item" filter="-"><span class="item">Kết thúc với</span></div>
+                                                        <div class="dropdown-item" filter="!="><span class="item">Không chứa</span></div>
+                                                        <div class="dropdown-item" filter="*"><span class="item">Trống</span></div>
+                                                        <div class="dropdown-item" filter="!*"><span class="item">Không trống</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="ClassOrOrganizationUnit">
+                                        <div fieldData="ClassOrOrganizationUnit" datatype="string">
+                                            <div class="column-title" msort="normal">Phòng ban<span class="show-filter-normal"></span></div>
+                                            <div class="column-filter">
+                                                <input class="filter-input" />
+                                                <div class="dropdown">
+                                                    <a href="#" class="filter-img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <div class="dropdown-item remove-filter"><span></span><span class="item">Xóa điều kiện lọc</span></div>
+                                                        <div class="dropdown-item dot" filter="!"><span class="item">Chứa</span></div>
+                                                        <div class="dropdown-item" filter="="><span class="item">Bằng</span></div>
+                                                        <div class="dropdown-item" filter="+"><span class="item">Bắt đầu với</span></div>
+                                                        <div class="dropdown-item" filter="-"><span class="item">Kết thúc với</span></div>
+                                                        <div class="dropdown-item" filter="!="><span class="item">Không chứa</span></div>
+                                                        <div class="dropdown-item" filter="*"><span class="item">Trống</span></div>
+                                                        <div class="dropdown-item" filter="!*"><span class="item">Không trống</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="Gender">
+                                        <div fieldData="Gender" datatype="string">
+                                            <div class="column-title" msort="normal">Giới tính<span class="show-filter-normal"></span></div>
+                                            <div class="column-filter">
+                                                <input class="filter-input" />
+                                                <div class="dropdown">
+                                                    <a href="#" class="filter-img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <div class="dropdown-item remove-filter"><span class="item">Xóa điều kiện lọc</span></div>
+                                                        <div class="dropdown-item dot" filter="="><span class="item">Bằng</span></div>
+                                                        <div class="dropdown-item" filter="#"><span class="item">Khác</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="BirthDate">
+                                        <div fieldData="BirthDate" datatype="date">
+                                            <div class="column-title" msort="normal">Ngày sinh<span class="show-filter-normal"></span></div>
+                                            <div class="column-filter">
+                                                <input class="filter-input filter-birthday" />
+                                                <div class="dropdown">
+                                                    <a href="#" class="filter-img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <div class="dropdown-item remove-filter"><span class="item">Xóa điều kiện lọc</span></div>
+                                                        <div class="dropdown-item dot" filter="="><span class="item">Bằng</span></div>
+                                                        <div class="dropdown-item" filter="<"><span class="item">Nhỏ hơn</span></div>
+                                                        <div class="dropdown-item" filter="<="><span class="item">Nhỏ hơn hoặc bằng</span></div>
+                                                        <div class="dropdown-item" filter=">"><span class="item">Lớn hơn</span></div>
+                                                        <div class="dropdown-item" filter=">="><span class="item">Lớn hơn hoặc bằng</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="IssueDate">
+                                        <div fieldData="IssueDate" dataType="date">
+                                            <div class="column-title" msort="normal">Ngày cấp<span class="show-filter-normal"></span></div>
+                                            <div class="column-filter">
+                                                <input class="filter-input filter-dateallocated" />
+                                                <div class="dropdown">
+                                                    <a href="#" class="filter-img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <div class="dropdown-item remove-filter"><span class="item">Xóa điều kiện lọc</span></div>
+                                                        <div class="dropdown-item dot" filter="="><span class="item">Bằng</span></div>
+                                                        <div class="dropdown-item" filter="<"><span class="item">Nhỏ hơn</span></div>
+                                                        <div class="dropdown-item" filter="<="><span class="item">Nhỏ hơn hoặc bằng</span></div>
+                                                        <div class="dropdown-item" filter=">"><span class="item">Lớn hơn</span></div>
+                                                        <div class="dropdown-item" filter=">="><span class="item">Lớn hơn hoặc bằng</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="ValidityDate">
+                                        <div fieldData="ValidityDate" dataType="date">
+                                            <div class="column-title" msort="normal">Hiệu lực<span class="show-filter-normal"></span></div>
+                                            <div class="column-filter">
+                                                <input  class="filter-input filter-dateeffect" />
+                                                <div class="dropdown">
+                                                    <a href="#" class="filter-img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <div class="dropdown-item remove-filter"><span class="item">Xóa điều kiện lọc</span></div>
+                                                        <div class="dropdown-item dot" filter="="><span class="item">Bằng</span></div>
+                                                        <div class="dropdown-item" filter="<"><span class="item">Nhỏ hơn</span></div>
+                                                        <div class="dropdown-item" filter="<="><span class="item">Nhỏ hơn hoặc bằng</span></div>
+                                                        <div class="dropdown-item" filter=">"><span class="item">Lớn hơn</span></div>
+                                                        <div class="dropdown-item" filter=">="><span class="item">Lớn hơn hoặc bằng</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="ExpiryDate">
+                                        <div fieldData="ExpiryDate" dataType="date">
+                                            <div class="column-title" msort="normal">Ngày hết hạn<span class="show-filter-normal"></span></div>
+                                            <div class="column-filter">
+                                                <input class="filter-input filter-dateexpired" />
+                                                <div class="dropdown">
+                                                    <a href="#" class="filter-img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <div class="dropdown-item remove-filter"><span class="item">Xóa điều kiện lọc</span></div>
+                                                        <div class="dropdown-item dot" filter="="><span class="item">Bằng</span></div>
+                                                        <div class="dropdown-item" filter="<"><span class="item">Nhỏ hơn</span></div>
+                                                        <div class="dropdown-item" filter="<="><span class="item">Nhỏ hơn hoặc bằng</span></div>
+                                                        <div class="dropdown-item" filter=">"><span class="item">Lớn hơn</span></div>
+                                                        <div class="dropdown-item" filter=">="><span class="item">Lớn hơn hoặc bằng</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-tbody-reader tbody-teacher"></tbody>
+                        </table>
+                    </div>
+                    <!--Phần table-footer-->
+                    <div class="grid-footer">
+                        <div class="grid-footer-left-one">
+                            <div class="prev">
+                                <div class="prev-on" style="display:none">
+                                    <span class="prev-last">
+                                        <img src="../Contents/icon/prev-last-on.gif" />
+                                    </span>
+                                    <span class="prev-step">
+                                        <img src="../Contents/icon/prev-step-on.gif" />
+                                    </span>
+                                </div>
+                                <div class="prev-off">
+                                    <span>
+                                        <img src="../Contents/icon/prev-last-off.gif" />
+                                    </span>
+                                    <span>
+                                        <img src="../Contents/icon/prev-step-off.gif" />
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="separator"></span>
+                            <div>
+                                <span style="margin: -2px 1px 0 3px">Trang</span>
+                                <span class="current-display-page"><input type="text" name="name" value="1" /></span>
+                                <span style="margin: -1px 4px 0 0;">trên</span>
+                                <span class="total-page">20</span>
+                            </div>
+                            <span class="separator"></span>
+                            <div class="next">
+                                <div class="next-on">
+                                    <span class="next-step">
+                                        <img src="../Contents/icon/next.gif" />
+                                    </span>
+                                    <span class="next-last">
+                                        <img src="../Contents/icon/last-enable.gif" />
+                                    </span>
+                                </div>
+                                <div class="next-off" style="display:none">
+                                    <span>
+                                        <img src="../Contents/icon/next-disable.gif" />
+                                    </span>
+                                    <span>
+                                        <img src="../Contents/icon/last-disable.gif" />
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="separator"></span>
+                            <div class="amount-record">
+                                <span style="margin: 1px 0 0 2px;">Số bản ghi</span>
+                                <div class="page-size">
+                                    <input type="text" name="name" disabled value="50" />
+                                    <div class="select-page-size hide-on-click">
+                                        <div><span>10</span></div>
+                                        <div><span>20</span></div>
+                                        <div class="page-size-click"><span>50</span></div>
+                                        <div><span>100</span></div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-icon icon-selection toggle-btn"></div>
+                            </div>
+                        </div>
+                        <div class="grid-footer-right float-right">
+                            <span>Hiển thị</span> <span class="from-record">1</span> - <span class="to-record">50</span> trên <span class="total-record">100</span> <span>kết quả</span>
+                        </div>
+                    </div>
+                </div>
+                <!--PHẦN CỦA CHI TIẾT PHIẾU MƯỢN-->
+                <p>Lịch sử mượn trả</p>
+                <!--Phần Grid - Detail-->
+                <div class="grid-two">
+                    <div class="grid-table-history">
+                        <table id="tblHistory" recordId="MemberID">
+                            <thead>
+                                <tr>
+                                    <th fieldName="DKCBCode">
+                                        <div fieldData="DKCBCode">
+                                            <div class="column-title" hsort="normal">Số ĐKCB<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="ISBNCode" dataType="string">
+                                        <div fieldData="ISBNCode">
+                                            <div class="column-title" hsort="normal">Mã ISBN<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="BookTitle" dataType="string">
+                                        <div fieldData="BookTitle">
+                                            <div class="column-title" hsort="normal">Nhan đề<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="BorrowingBookCode" dataType="string">
+                                        <div fieldData="BorrowingBookCode">
+                                            <div class="column-title" hsort="normal">Số phiếu<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="Author" dataType="string">
+                                        <div fieldData="Author">
+                                            <div class="column-title" hsort="normal">Tác giả<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+
+                                    <th fieldName="BorrowingDate" dataType="date">
+                                        <div fieldData="BorrowingDate" dataType="Date">
+                                            <div class="column-title" hsort="normal">Ngày mượn<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="DueDate">
+                                        <div fieldData="DueDate" dataType="date">
+                                            <div class="column-title" hsort="normal">Ngày hẹn trả<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="ReturnDate">
+                                        <div fieldData="ReturnDate" dataType="date">
+                                            <div class="column-title" hsort="normal">Ngày trả/báo mất<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+                                    <th fieldName="ReturnBookState" dataType="string">
+                                        <div fieldData="ReturnBookState">
+                                            <div class="column-title" hsort="normal">Trạng thái<span class="show-filter-normal"></span></div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-tbody-history"></tbody>
+                        </table>
+                    </div>
+                    <!--Phần table-footer-->
+                    <div class="grid-footer">
+                        <div class="grid-footer-left-one">
+                            <div class="prev">
+                                <div class="prev-on" style="display:none">
+                                    <span class="prev-last">
+                                        <img src="../Contents/icon/prev-last-on.gif" />
+                                    </span>
+                                    <span class="prev-step">
+                                        <img src="../Contents/icon/prev-step-on.gif" />
+                                    </span>
+                                </div>
+                                <div class="prev-off">
+                                    <span>
+                                        <img src="../Contents/icon/prev-last-off.gif" />
+                                    </span>
+                                    <span>
+                                        <img src="../Contents/icon/prev-step-off.gif" />
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="separator"></span>
+                            <div>
+                                <span style="margin: -2px 1px 0 3px">Trang</span>
+                                <span class="current-display-page"><input type="text" name="name" value="1" /></span>
+                                <span style="margin: -1px 4px 0 0;">trên</span>
+                                <span class="total-page">20</span>
+                            </div>
+                            <span class="separator"></span>
+                            <div class="next">
+                                <div class="next-on">
+                                    <span class="next-step">
+                                        <img src="../Contents/icon/next.gif" />
+                                    </span>
+                                    <span class="next-last">
+                                        <img src="../Contents/icon/last-enable.gif" />
+                                    </span>
+                                </div>
+                                <div class="next-off" style="display:none">
+                                    <span>
+                                        <img src="../Contents/icon/next-disable.gif" />
+                                    </span>
+                                    <span>
+                                        <img src="../Contents/icon/last-disable.gif" />
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="separator"></span>
+                            <div class="amount-record">
+                                <span style="margin: 1px 0 0 2px;">Số bản ghi</span>
+                                <div class="page-size">
+                                    <input type="text" name="name" disabled value="50" />
+                                    <div class="select-page-size hide-on-click">
+                                        <div><span>10</span></div>
+                                        <div><span>20</span></div>
+                                        <div class="page-size-click"><span>50</span></div>
+                                        <div><span>100</span></div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-icon icon-selection toggle-btn"></div>
+                            </div>
+                        </div>
+                        <div class="grid-footer-right float-right">
+                            <span>Hiển thị</span> <span class="from-record">1</span> - <span class="to-record">50</span> trên <span class="total-record">100</span> <span>kết quả</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--PHẦN DIALOG ĐĂNG KÍ BẠN ĐỌC TỪ DANH SÁCH HỌC SINH-->
+        <!--NVSON 8/5/2019-->
+        <div id="dlgResgisterReaderList" class="readerDetail" style="display:none">
+            <div class="textField">THÔNG TIN THẺ</div>
+            <div class="inputField">
+                <div class="datetime" style="width:167px">
+                    <div class="inputField-text">Ngày cấp</div>
+                    <div class="datetimeip">
+                        <input type="text" id="dateAllocated-dialog2" />
+                    </div>
+                </div>
+                <div class="datetime">
+                    <div class="inputField-text">Ngày hiệu lực</div>
+                    <div class="datetimeip">
+                        <input type="text" id="dateEffect-dialog2" />
+                    </div>
+                </div>
+                <div class="datetime">
+                    <div class="inputField-text">Ngày hết hạn</div>
+                    <div class="datetimeip">
+                        <input type="text" id="dateExpired-dialog2" />
+                    </div>
+                </div>
+            </div>
+            <div class="textField">THÔNG TIN BẠN ĐỌC</div>
+            <div class="category">
+                <div class="textCategory">Đăng ký theo</div>
+                <div class="wrap-select">
+                    <select class="inputCategory" id="inputCategoryID" onchange="validateSelectBox(this)">
+                        <option value="1" style="font-size: 12px">Học sinh</option>
+                        <option value="2" style="font-size: 12px">Lớp</option>
+                        <option value="3" style="font-size: 12px">Khối</option>
+                        <option value="4" style="font-size: 12px">Toàn trường</option>
+                    </select>
+                </div>
+                <div class="categoryIcons"></div>
+            </div>
+            <div class="caution">
+                <div class="cautionIcon"></div>
+                <div class="cautionText1">Chú ý:</div>
+                <div class="cautionText2">Danh sách lựa chọn dưới đây chỉ bao gồm những học sinh chưa được đăng ký</div>
+            </div>
+            <div class="content-dialog2">
+                <div class="studentTable" id="studentTableID">
+                    <table class="studentTbl">
+                        <thead class="theadStudentTbl">
+                            <div class="btnAddRow">
+                                <div class="btnAddRowIcon"></div>
+                                <div class="btnAddRowText">Thêm dòng</div>
+                            </div>
+                            <tr>
+                                <th fielddName="thStudent" class="thStudent">
+                                    <div fieldData="student">
+                                        <div class="column-dialog-title">Học sinh</div>
+                                    </div>
+                                </th>
+                                <th fieldName="thIDCard" class="thIDCard">
+                                    <div fieldData="IDCard">
+                                        <div class="column-dialog-title">Mã Thẻ</div>
+                                    </div>
+                                </th>
+                                <th fieldName="thStudentCode" class="thStudentCode">
+                                    <div fieldData="studentCode">
+                                        <div class="column-dialog-title">Mã học sinh</div>
+                                    </div>
+                                </th>
+                                <th fieldName="thClass" class="thClass">
+                                    <div fieldData="class">
+                                        <div class="column-dialog-title">Lớp</div>
+                                    </div>
+                                </th>
+                                <th fieldName="thGender" class="thGender">
+                                    <div fieldData="gender">
+                                        <div class="column-dialog-title">Giới tính</div>
+                                    </div>
+                                </th>
+
+                                <th fieldName="thBirthday" class="thBirthday">
+                                    <div fieldData="birthday" dataType="Date">
+                                        <div class="column-dialog-title">Ngày sinh</div>
+                                    </div>
+                                </th>
+                                <th fieldName="thNone" class="thNone">
+                                    <div fieldData="none">
+                                        <div class="column-dialog-title"></div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbodyStudentTbl">
+                            <tr>
+                                <td>Trần Quốc Anh</td>
+                                <td>HS00001</td>
+                                <td>HS00001</td>
+                                <td>6A</td>
+                                <td>Nam</td>
+                                <td class="align-center">01/10/2004</td>
+                                <td>
+                                    <div class="checkStudent"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Đỗ Hoàng Quân</td>
+                                <td>HS00002</td>
+                                <td>HS00002</td>
+                                <td>6A</td>
+                                <td>Nam</td>
+                                <td class="align-center">01/11/2004</td>
+                                <td>
+                                    <div class="checkStudent"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Vương Xuân Sơn</td>
+                                <td>HS00003</td>
+                                <td>HS00003</td>
+                                <td>6A</td>
+                                <td>Nam</td>
+                                <td class="align-center">02/8/2004</td>
+                                <td>
+                                    <div class="checkStudent"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Vương Xuân Vinh</td>
+                                <td>HS00004</td>
+                                <td>HS00004</td>
+                                <td>6A</td>
+                                <td>Nam</td>
+                                <td class="align-center">9/5/2004</td>
+                                <td>
+                                    <div class="checkStudent"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Trần Quốc Bảo</td>
+                                <td>HS00005</td>
+                                <td>HS00005</td>
+                                <td>6A</td>
+                                <td>Nam</td>
+                                <td class="align-center">02/4/2002</td>
+                                <td>
+                                    <div class="checkStudent"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="classTable" id="classTableID" style="display:none">
+                    <table class="classTbl">
+                        <thead class="theadClassTbl">
+                            <tr>
+                                <th class="ckbClass"><input type="checkbox" class="ckbClassInput" /></th>
+                                <th class="class">Lớp</th>
+                                <th class="groupClass">Khối Lớp</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbodyClassTbl">
+                            <tr>
+                                <td><input type="checkbox" class="ckbClassInput" /></td>
+                                <td>6A</td>
+                                <td>Khối lớp 6</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="ckbClassInput" /></td>
+                                <td>7A</td>
+                                <td>Khối lớp 7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="groupStudentTable" id="groupStudentTableID" style="display:none">
+                    <table class="groupTable">
+                        <thead class="theadGroupTbl">
+                            <tr>
+                                <th class="ckbThStudentTbl"><input type="checkbox" /></th>
+                                <th class="groupThStudentTbl">Khối</th>
+                            </tr>
+                        </thead>
+                        <tbody class="TbodyGroupTbl">
+                            <tr>
+                                <td>
+                                    <input type="checkbox" />
+                                </td>
+                                <td>Khối lớp 6</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" />
+                                </td>
+                                <td>Khối lớp 7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ckbUsingStudentCode" id="ckbUsingStudentCodeID" style="display:none">
+                    <input type="checkbox" />
+                    <p>Sử dụng mã học sinh làm mã thẻ thư viện</p>
+                </div>
+            </div>
+            <div class="dialog-button-rl">
+                <button id="btn-dialog-Agree" class="btn-RegistrationList">
+                    <div>
+                        <img src="../Contents/icon/enable16.png" style="margin:0 0 3px 2px" />
+                    </div>
+                    <div style="margin-left: 6px;">Đồng ý</div>
+                </button>
+                <button id="btn-dialog-Cancel" class="btn-RegistrationList">
+                    <div>
+                        <img src="../Contents/icon/Disabled_button.png" style="margin:0 0 2px 2px" />
+                    </div>
+                    <div style="margin-left: 6px;">Hủy bỏ</div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Dialog đăng ký bạn đọc -->
+        <!-- Created by BQLINH (5/5/2019)-->
+        <!--Sơn sửa lại dialog của Linh-->
+        <!--NVSON 17/5/2019-->
+        <div id="dlgRegistrationReader" style="display:none">
+            <div class="dialog-head">
+                <div class="dialog-left">
+                    <img id="imgAvatar" class="border1px img-avarta" src="../Contents/img/publisher_dialog/avata.png" />
+                    <span>Thay ảnh khác</span>
+                    <!--<input type="file" value="Thay ảnh khác" />-->
+                </div>
+                <div class="dialog-right">
+                    <div class="m-row m-row-title">
+                        <div class="m-col col-flex ">THÔNG TIN BẠN ĐỌC</div>
+                    </div>
+                    <div class="m-row">
+                        <div class="m-col col-d1">
+                            <label>Họ và đệm <span style="color:red">(*)</span></label>
+                        </div>
+                        <div class="m-col col-d2">
+                            <input type="text" id="txtLastName" class="required" tabindex="1" name="LastName" />
+                        </div>
+                        <div class="m-col col-d3">
+                            <label>Tên <span style="color:red">(*)</span></label>
+                        </div>
+                        <div class="m-col col-d4">
+                            <input type="text" id="txtFirstName" class="required" tabindex="2" name="FirstName" />
+                        </div>
+                        <div class="m-col col-d5">
+                            <label>Họ và tên</label>
+                        </div>
+                        <div class="m-col col-flex">
+                            <input type="text" disabled id="txtFullName" name="FullName" />
+                        </div>
+                    </div>
+                    <div class="m-row">
+                        <div class="m-col col-d1">
+                            <label>Lớp <span style="color:red">(*)</span></label>
+                        </div>
+                        <div class="m-col col-d2">
+                            <input type="text" id="txtClassName" name="ClassOrOrganizationUnit" class="required" tabindex="3" />
+                        </div>
+                        <div class="m-col col-d3">
+                            <label>Giới tính</label>
+                        </div>
+                        <div class="m-col col-d4">
+                            <select style="width: 60px;" tabindex="4" name="Gender">
+                                <option value="1">Nam</option>
+                                <option value="0">Nữ</option>
+                            </select>
+                        </div>
+                        <div class="m-col col-d5">
+                            <label>Ngày sinh</label>
+                        </div>
+                        <div class="m-col col-d2">
+                            <input type="text" id="txtBirthday" class="validateDate" name="BirthDate" tabindex="5" />
+                        </div>
+                    </div>
+
+                    <div class="m-row">
+                        <div class="m-col col-d1">
+                            <label>Địa chỉ</label>
+                        </div>
+                        <div class="m-col col-flex">
+                            <input type="text" id="txtAddress" name="BookReaderAddress" tabindex="6" />
+                        </div>
+                    </div>
+
+                    <div class="m-row  m-row-title" style="margin: 9px 0;">
+                        <div class="m-col col-flex">THÔNG TIN THẺ</div>
+                    </div>
+                    <div class="m-row">
+                        <div class="m-col col-d1">
+                            <label>Mã thẻ <span style="color:red">(*)</span></label>
+                        </div>
+                        <div class="m-col col-d2">
+                            <input type="text" id="txtMemberCode" name="BookReaderCode" class="required" tabindex="7" />
+                        </div>
+                        <div class="m-col col-d6">
+                            <label>Ngày cấp</label>
+                        </div>
+                        <div class="m-col col-d2">
+                            <input type="text" id="txtDateAllocated" name="IssueDate" tabindex="8" />
+                        </div>
+                    </div>
+                    <div class="m-row">
+                        <div class="m-col col-d1">
+                            <label>Ngày hiệu lực</label>
+                        </div>
+                        <div class="m-col col-d2">
+                            <input type="text" id="txtEffectDate" name="ValidityDate" tabindex="9" />
+                        </div>
+                        <div class="m-col col-d6">
+                            <label>Ngày hết hạn</label>
+                        </div>
+                        <div class="m-col col-d2">
+                            <input type="text" id="txtExpireDate" name="ExpiryDate" tabindex="10" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog-button">
+                <button id="btn-Save" class="btn-Registration" tabindex="11">
+                    <div style="height: 16px;">
+                        <img src="../Contents/icon/save_button.png" />
+                    </div>
+                    <div style="margin-left: 10px;">Cất</div>
+                </button>
+                <button id="btn-Cancel" class="btn-Registration" tabindex="12">
+                    <div style="height: 16px;">
+                        <img src="../Contents/icon/Disabled_button.png" />
+                    </div>
+                    <div style="margin-left: 6px;">Hủy bỏ</div>
+                </button>
+            </div>
+            <div id="focus1" tabindex="13"></div>
+        </div>
+
+
+        <!--Dialog thông báo xác nhận thông tin xóa bản ghi-->
+        <!--Created by: NVSON (25/5/2019)-->
+        <div id="dlgStateDelete" style="display:none">
+            <div class="dlg-state-content">
+                <div class="content-state">
+                    <div class="icon-state"><img src="" /></div>
+                    <p class="text-state"></p>
+                </div>
+                <div class="button-state">
+                    <button id="btn-state-yes"><span class="btn-icon"></span><span class="btn-text">Có</span></button>
+                    <button id="btn-state-no"><span class="btn-icon"></span><span class="btn-text">Không</span></button>
+                    <button id="btn-state-agree" style="display:none"><span class="btn-icon"></span><span class="btn-text">Đồng ý</span></button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Phần context menu-->
+        <div id="contextmenu" style="display: none; position: absolute;">
+            <div class="contextMenu">
+                <div id="btn-Add" class="display-flex">
+                    <div class="icon-mouse-right"><img src="../Contents/icon/add16.png"></div>
+                    <div id="btn-Add-Reader" title="Ctrl+Alt+N" class="borderleft add-reader-student">Đăng ký bạn đọc<img src="../Contents/icon/next.gif" style="padding-left: 3px"></div>
+                    <div class="add-reader-student-hide" style="display: none">
+                        <div id="btn-Add-List" class="add-reader-student-hide-item">Đăng ký bạn đọc từ danh sách học sinh</div>
+                    </div>
+                </div>
+                <div id="btn-Edit" class="display-flex" title="Ctrl+E">
+                    <div class="icon-mouse-right"><img src="../Contents/icon/edit16.png" /></div>
+                    <div class="borderleft">Sửa</div>
+                </div>
+                <div id="btn-Delete" class="display-flex" title="Ctrl + D">
+                    <div class="icon-mouse-right"><img src="../Contents/icon/delete_metro.png"></div>
+                    <div class="borderleft">Xóa</div>
+                </div>
+                <div id="btn-Refresh" class="display-flex" title="Ctrl + R">
+                    <div class="icon-mouse-right"><img src="../Contents/icon/refresh16.png"></div>
+                    <div class="borderleft">Nạp</div>
+                </div>
+                <div id="btn-Import" class="display-flex import">
+                    <div class="icon-mouse-right"><img src="../Contents/icon/Import16.png" /></div>
+                    <div class="borderleft">Nhập khẩu</div>
+                </div>
+                <div id="btn-Import" class="display-flex">
+                    <div class="icon-mouse-right"><img src="../Contents/icon/Export16.png" /></div>
+                    <div class="borderleft">Xuất khẩu</div>
+                </div>
+                <div id="btn-Print" class="display-flex print">
+                    <div class="icon-mouse-right"><img src="../Contents/icon/printer16.png" /></div>
+                    <div class="borderleft">In<img src="../Contents/icon/next.gif" style="padding-left: 75px"></div>
+                </div>
+                <div id="btn-Help" class="display-flex" title="Ctrl + H">
+                    <div class="icon-mouse-right"><img src="../Contents/icon/help16.png"></div>
+                    <div class="borderleft">Giúp</div>
+                </div>
+
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="../Scripts/lib/jquery-ui-1.12.1/jquery-ui.js"></script>
+        <script src="../Scripts/lib/bootstrap-4.3.1/js/bootstrap.js"></script>
+        <!--Phần thư viện inputmask-->
+        <script src="../Scripts/lib/inputmask/lib/jquery.inputmask.js"></script>
+        <script src="../Scripts/lib/inputmask/lib/jquery.inputmask.js"></script>
+        <script src="../Scripts/lib/inputmask/lib/maskScope.js"></script>
+        <script src="../Scripts/lib/inputmask/lib/maskset.js"></script>
+        <script src="../Scripts/lib/inputmask/dist/inputmask.js"></script>
+        <!--Thư viện phần context menu-->
+        <link href="/Scripts/lib/context-menu/jquery.contextMenu.min.css" rel="stylesheet" />
+        <script src="/Scripts/lib/context-menu/jquery.contextMenu.min.js"></script>
+        <script src="/Scripts/lib/context-menu/jquery.ui.position.js"></script>
+        <!--Phần JS chung-->
+        <script src="/Scripts/base/common.js"></script>
+        <script src="/Scripts/dialog/dialogReader.js"></script>
+        <script src="../Scripts/dialog/dialogState.js"></script>
+        <script src="/Scripts/base/validate.js"></script>
+        <script src="/Scripts/view/reader.js"></script>
+
+        <!-- Trường thêm phần script thẻ select -->
+        <script language="javascript">
+            function validateSelectBox(obj) {
+                var selected = $(obj).val();
+                console.log(selected);
+                if (selected == 1) {
+                    $('#studentTableID').show();
+                    $('#classTableID').hide();
+                    $('#groupStudentTableID').hide();
+                    $('#ckbUsingStudentCodeID').hide();
+                } else if (selected == 2) {
+                    $('#studentTableID').hide();
+                    $('#classTableID').show();
+                    $('#groupStudentTableID').hide();
+                    $('#ckbUsingStudentCodeID').show();
+                } else if (selected == 3) {
+                    $('#studentTableID').hide();
+                    $('#classTableID').hide();
+                    $('#groupStudentTableID').show();
+                    $('#ckbUsingStudentCodeID').show();
+                } else {
+                    $('#studentTableID').hide();
+                    $('#classTableID').hide();
+                    $('#groupStudentTableID').hide();
+                    $('#ckbUsingStudentCodeID').show();
+                };
+            }
+        </script>
+    </div>
+</body>
+</html>

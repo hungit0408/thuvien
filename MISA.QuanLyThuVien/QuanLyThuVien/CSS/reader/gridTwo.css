@@ -1,0 +1,161 @@
+﻿/*===========================================Phan Grid Two========================================*/
+.content > p {
+    margin: 4px;
+    font-size: 15px;
+}
+
+.grid-two {
+    border: 1px solid #ccc;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 167px;
+    max-height: 250px;
+    height: 200px;
+    min-width: 1200px;
+}
+
+.grid-table-history {
+    overflow-y: scroll;
+    border-top: 1px solid #ccc;
+    flex-grow: 1;
+}
+
+.grid-two tbody {
+    overflow-y: scroll;
+    font-size: 12px;
+}
+/*Định dạng cho thẻ th*/
+/*NVSON 7/5/2018*/
+th[fieldName=DKCBCode] {
+    width: 119px;
+}
+
+th[fieldName=ISBNCode] {
+    width: 149px;
+}
+
+th[fieldName=BorrowingBookCode] {
+    width: 119px;
+}
+
+th[fieldName=Author] {
+    width: 149px;
+}
+
+th[fieldName=BorrowingDate] {
+    width: 129px;
+}
+
+th[fieldName=DueDate] {
+    width: 129px;
+}
+
+th[fieldName=ReturnDate] {
+    width: 129px;
+}
+
+th[fieldName=ReturnBookState] {
+    width: 90px;
+}
+
+/*Định dạng cho trường trạng thái trong bản lịch sử mượn trả */
+/*NVSON 7/5/2018*/
+
+.data-item-state-t, .data-item-state-f, .data-item-state-n {
+    position: relative;
+}
+
+
+    .data-item-state-t .tag-img-state {
+        background-image: url(/Contents/icon/TagHeader-Green.png);
+        background-repeat: no-repeat;
+        display: inline-flex;
+        width: 12px;
+        height: 18px;
+        position: absolute;
+        left: 10px;
+        top: 4px;
+    }
+
+    .data-item-state-t p {
+        margin: 0;
+        color: white;
+        background-color: #2e7d32;
+        height: 18px;
+        width: 56px;
+        text-align: center;
+        position: absolute;
+        left: 18px;
+        top: 4px;
+    }
+
+    .data-item-state-f .tag-img-state {
+        background-image: url(/Contents/icon/TagHeader-Orange.png);
+        background-repeat: no-repeat;
+        display: inline-flex;
+        width: 12px;
+        height: 18px;
+        position: absolute;
+        left: 10px;
+        top: 4px;
+    }
+
+    .data-item-state-f p {
+        margin: 0;
+        color: white;
+        background-color: #fb8c00;
+        height: 18px;
+        width: 56px;
+        text-align: center;
+        position: absolute;
+        left: 18px;
+        top: 4px;
+    }
+
+    .data-item-state-n .tag-img-state {
+        
+        background-image: url('../../Contents/icon/TagHeader-Red.png');
+        background-repeat: no-repeat;
+        display: inline-flex;
+        width: 12px;
+        height: 18px;
+        position: absolute;
+        left: 10px;
+        top: 4px;
+    }
+
+    .data-item-state-n p {
+        margin: 0;
+        color: white;
+        background-color: #bf360c;
+        height: 18px;
+        width: 56px;
+        text-align: center;
+        position: absolute;
+        left: 18px;
+        top: 4px;
+    }
+
+/*Các phần CSS hiệu ứng căn chỉnh*/
+.highlight-tr {
+    background-color: #FFCB60 !important;
+}
+
+.align-left {
+    text-align: left;
+    padding-left: 6px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.border-red {
+    border: 1px solid red;
+}
+
+.disable-btn {
+    opacity: 0.3;
+    pointer-events: none;
+}

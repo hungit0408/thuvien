@@ -1,0 +1,578 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Phần mềm quản lý trường học</title>
+    <link href="../CSS/Supplier/lib/bootstrap.min.css" rel="stylesheet" />
+    <link href="../CSS/Supplier/lib/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="../CSS/Supplier/common/common.css" rel="stylesheet" />
+    <link href="../CSS/header.css" rel="stylesheet" />
+    <link href="../CSS/Supplier/common/toolbar.css" rel="stylesheet" />
+    <link href="../CSS/Supplier/common/grid.css" rel="stylesheet" />
+    <link href="../CSS/Supplier/Views/supplier.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <!--TUẤN SỬA CHỖ NÀY-->
+        <div class="header">
+            <div class="top-header">
+                <div class="main-logo"></div>
+                <div class="select-library">- Thư viện</div>
+                <div class="select-list-header toggle-btn">
+                    <img src="/Contents/img/header/mui_ten.PNG" class="toggle-btn" />
+                </div>
+
+                <!--Menu chọn chức năng, DQTuan 05/05/2019-->
+                <div class="list-menu-header hide-on-click">
+                    <div class="btnWebsite">
+                        <div class="img-list-menu-header img-btnWebsite">
+                            <img src="/Contents/img/header/News-app.png" />
+                        </div>
+                        <div class="text-btn-header">Website</div>
+                    </div>
+                    <div class="btnStudent">
+                        <div class="img-list-menu-header img-btnStudent">
+                            <img src="/Contents/img/header/Student-app.png" />
+                        </div>
+                        <div class="text-btn-header">Học sinh</div>
+                    </div>
+                    <div class="btnManager">
+                        <div class="img-list-menu-header img-btnManager">
+                            <img src="/Contents/img/header/Teacher-app.png" />
+                        </div>
+                        <div class="text-btn-header">Cán bộ, CCVC</div>
+                    </div>
+                    <div class="btnTool">
+                        <div class="img-list-menu-header img-btnTool">
+                            <img src="/Contents/img/header/Equipment-app.png" />
+                        </div>
+                        <div class="text-btn-header">Thiết bị</div>
+                    </div>
+                    <div class="btnLibrary">
+                        <div class="img-list-menu-header img-btnLibrary">
+                            <img src="/Contents/img/header/Library-app.png" />
+                        </div>
+                        <div class="text-btn-header">Thư viện</div>
+                    </div>
+                    <div class="btnGet">
+                        <div class="img-list-menu-header img-btnGet">
+                            <img src="/Contents/img/header/Fee-app.png" />
+                        </div>
+                        <div class="text-btn-header">Khoản thu</div>
+                    </div>
+                    <div class="btnHopital">
+                        <div class="img-list-menu-header img-btnHopital">
+                            <img src="/Contents/img/header/Health-app.png" />
+                        </div>
+                        <div class="text-btn-header">Y tế</div>
+                    </div>
+                    <div class="btnMail">
+                        <div class="img-list-menu-header img-btnMail">
+                            <img src="/Contents/img/header/email-app.png" />
+                        </div>
+                        <div class="text-btn-header">Văn thư</div>
+                    </div>
+                    <div class="btnDocument">
+                        <div class="img-list-menu-header img-btnDocument">
+                            <img src="/Contents/img/header/Document-app.png" />
+                        </div>
+                        <div class="text-btn-header text-btn-header">Tài liệu</div>
+                    </div>
+                    <div class="btnImgs">
+                        <div class="img-list-menu-header img-btnImgs">
+                            <img src="/Contents/img/header/Picture-app.png" />
+                        </div>
+                        <div class="text-btn-header">Kho ảnh</div>
+                    </div>
+                    <div class="btnFilms">
+                        <div class="img-list-menu-header img-btnFilms">
+                            <img src="/Contents/img/header/Video-app.png" />
+                        </div>
+                        <div class="text-btn-header">Kho phim</div>
+                    </div>
+                    <div class="btnAsset">
+                        <div class="img-list-menu-header img-btnAsset">
+                            <img src="/Contents/img/header/Asset-app.png" />
+                        </div>
+                        <div class="text-btn-header">Tài sản</div>
+                    </div>
+                </div>
+                <div class="user-info-help" title="Trợ giúp"></div>
+                <div class="user-info-full-arrowdown" style="margin-top:14px;">
+                    <img src="/Contents/img/header/full_arrowdown.png" />
+                </div>
+                <div class="main-user-info"> Trường THPT MISA 1 - Trần Thị Mai</div>
+            </div>
+            <div class="menu-header">
+                <div class="menu-item">
+                    <div class="ul-menu-item-header">
+                        <div class="menu-item-header lbdesktop">
+                            <a class="text-btn-item" href="#">Bàm làm việc</a>
+                        </div>
+                        <div class="menu-item-header lbbook">
+                            <a class="text-btn-item" href="#">Sách</a>
+                            <span class="part-arrowdown"><img src="/Contents/img/header/part-arrowdown.png" /></span>
+                            <div class="hide-header-menu hide-header-menu-book">
+                                <div class="hide-header-menu-item"><a href="#">Danh sách sách</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Khai báo số lượng sách ban đầu</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Nhập sách</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Nhập sách</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Xuất sách</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Kiểm kê sách</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-item-header lbnewspaper">
+                            <a class="text-btn-item" href="#">Báo, Tạp chí</a>
+                            <span class="part-arrowdown"><img src="/Contents/img/header/part-arrowdown.png" /></span>
+                            <div class="hide-header-menu hide-header-menu-newspaper">
+                                <div class="hide-header-menu-item"><a href="#">Danh sách báo, tạp chí</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Đăng ký báo, tạp chí</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-item-header lbcirculate">
+                            <a class="text-btn-item" href="#">Lưu thông</a>
+                            <span class="part-arrowdown"><img src="/Contents/img/header/part-arrowdown.png" /></span>
+                            <div class="hide-header-menu hide-header-menu-circulate">
+                                <div class="hide-header-menu-item"><a href="#">Lập phiếu mượn</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Trả sách</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Danh sách phiếu mượn</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Ghi nhận số lượt bạn đọc tại chỗ</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-item-header lbreader">
+                            <a class="text-btn-item" href="../Views/index.html">Bạn đọc</a>
+                        </div>
+                        <div class="menu-item-header lbdictionary highlight-header">
+                            <a class="text-btn-item" href="#">Danh mục</a>
+                            <span class="part-arrowdown"><img src="/Contents/img/header/part-arrowdown.png" /></span>
+                            <div class="hide-header-menu hide-header-menu-dictionary">
+                                <div class="hide-header-menu-item"><a href="../Views/publisher.html">Nhà xuất bản</a></div>
+                                <div class="hide-header-menu-item"><a href="../Views/categorySymbol.html">Kí hiệu phân loại</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Danh sách mẫu trộn</a></div>
+                                <div class="hide-header-menu-item"><a href="../Views/supplier.html">Nhà cung cấp</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-item-header lbsetting">
+                            <a class="text-btn-item" href="#">Thiết lập</a>
+                            <span class="part-arrowdown"><img src="/Contents/img/header/part-arrowdown.png" /></span>
+                            <div class="hide-header-menu hide-header-menu-setting">
+                                <div class="hide-header-menu-item"><a href="#">Thời gian học/Lịch nghỉ lễ</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Nội quy thư viện</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Kí hiệu xếp giá</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Đánh số đăng ký cá biệt</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Thông tin đơn vị</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Thông tin năm học</a></div>
+                                <div class="hide-header-menu-item"><a href="#">Nhật ký truy cập</a></div>
+                            </div>
+                        </div>
+                        <div class="menu-item-header lbreport">
+                            <a class="text-btn-item" href="#">Báo cáo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="year-label">
+                    <div style="margin-top: 2px;"><span>Năm học: </span></div>
+                    <div>
+                        <!--Sửa lable năm DQTuan 05/05/2019-->
+                        <select class="select-year-label">
+                            <option value="2018-2019">2018-2019</option>
+                            <option value="2017-2018">2017-2018</option>
+                            <option value="2016-2017">2016-2017</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <div class="title">
+                <label>Danh sách nhà cung cấp</label>
+            </div>
+            <!-- Tool bar -->
+            <div class="toolbar">
+                <div id="btnAdd" class="toolbar-item" title="Ctrl + Alt + N">
+                    <div class="toolbar-item-icon icon-add"></div>
+                    <div class="toolbar-item-text">Thêm</div>
+                </div>
+                <div id="btnEdit" class="toolbar-item" title="Ctrl + E">
+                    <div class="toolbar-item-icon icon-edit"></div>
+                    <div class="toolbar-item-text">Sửa</div>
+                </div>
+                <div id="btnDelete" class="toolbar-item" title="Ctrl + D">
+                    <div class="toolbar-item-icon icon-delete"></div>
+                    <div class="toolbar-item-text">Xóa</div>
+                </div>
+                <div id="btnRefresh" class="toolbar-item" title="Ctrl + R">
+                    <div class="toolbar-item-icon icon-refresh"></div>
+                    <div class="toolbar-item-text">Nạp</div>
+                </div>
+                <div class="separator"></div>
+                <div id="btnHelp" class="toolbar-item" title="Ctrl + H">
+                    <div class="toolbar-item-icon icon-help"></div>
+                    <div class="toolbar-item-text">Giúp</div>
+                </div>
+            </div>
+            <!--Grid-->
+            <!-- Created by BQLINH (1/5/2019) -->
+            <div class="grid">
+                <!-- Grid header -->
+                <!-- Created by BQLINH (1/5/2019) -->
+                <div class="grid-header">
+                    <div class="grid-header-item-1">
+                        <div class="column-title" style="border-bottom:none;" title="Số thứ tự">STT</div>
+                    </div>
+                    <div class="grid-header-item-2" fieldData="SupplierCode">
+                        <div class="column-title" state="normal"><span>Mã nhà cung cấp</span></div>
+                        <div class="column-filter">
+                            <div class="filter-option toggle-btn">
+                                <div class="filter-option-right"><span><i style="padding: 0 3px;" class="fas fa-caret-down"></i></span></div>
+                                <div class="filter-option-middle"><span class="separator"></span></div>
+                                <div class="filter-option-left">
+                                    <span>* :</span>
+                                </div>
+                                <div class="hide-filter-option hide-on-click">
+                                    <div class="delete-condition"><div class="point"></div><div class="text-filter-option" title="Xóa điều kiện lọc">Xóa điều kiện lọc</div></div>
+                                    <div class="default-condition condition"><div class="point" style="visibility:visible;"></div><div class="text-filter-option" title="Chứa">Chứa</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Bằng">Bằng</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Bắt đầu với">Bắt đầu với</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Kết thúc với">Kết thúc với</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Không chứa">Không chứa</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Trống">Trống</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Không trống">Không trống</div></div>
+                                </div>
+                            </div>
+                            <div class="filter-input">
+                                <input filterType="Chứa" fieldData="SupplierCode" type="text" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-header-item-3" fieldData="SupplierName">
+                        <div class="column-title" state="normal"><span>Tên nhà cung cấp</span></div>
+                        <div class="column-filter">
+                            <div class="filter-option toggle-btn">
+                                <div class="filter-option-right"><span><i style="padding: 0 3px;" class="fas fa-caret-down"></i></span></div>
+                                <div class="filter-option-middle"><span class="separator"></span></div>
+                                <div class="filter-option-left">
+                                    <span>* :</span>
+                                </div>
+                                <div class="hide-filter-option hide-on-click">
+                                    <div class="delete-condition"><div class="point"></div><div class="text-filter-option" title="Xóa điều kiện lọc">Xóa điều kiện lọc</div></div>
+                                    <div class="default-condition condition"><div class="point" style="visibility:visible;"></div><div class="text-filter-option" title="Chứa">Chứa</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Bằng">Bằng</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Bắt đầu với">Bắt đầu với</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Kết thúc với">Kết thúc với</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Không chứa">Không chứa</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Trống">Trống</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Không trống">Không trống</div></div>
+                                </div>
+                            </div>
+                            <div class="filter-input">
+                                <input filterType="Chứa" fieldData="SupplierName" type="text" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-header-item-3" fieldData="Address">
+                        <div class="column-title" state="normal"><span>Địa chỉ</span></div>
+                        <div class="column-filter">
+                            <div class="filter-option toggle-btn">
+                                <div class="filter-option-right"><span><i style="padding: 0 3px;" class="fas fa-caret-down"></i></span></div>
+                                <div class="filter-option-middle"><span class="separator"></span></div>
+                                <div class="filter-option-left">
+                                    <span>* :</span>
+                                </div>
+                                <div class="hide-filter-option hide-on-click">
+                                    <div class="delete-condition"><div class="point"></div><div class="text-filter-option" title="Xóa điều kiện lọc">Xóa điều kiện lọc</div></div>
+                                    <div class="default-condition condition"><div class="point" style="visibility:visible;"></div><div class="text-filter-option" title="Chứa">Chứa</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Bằng">Bằng</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Bắt đầu với">Bắt đầu với</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Kết thúc với">Kết thúc với</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Không chứa">Không chứa</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Trống">Trống</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Không trống">Không trống</div></div>
+                                </div>
+                            </div>
+                            <div class="filter-input">
+                                <input filterType="Chứa" fieldData="Address" type="text" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-header-item-2" fieldData="TaxCode">
+                        <div class="column-title" state="normal"><span>Mã số thuế</span></div>
+                        <div class="column-filter">
+                            <div class="filter-option toggle-btn">
+                                <div class="filter-option-right"><span><i style="padding: 0 3px;" class="fas fa-caret-down"></i></span></div>
+                                <div class="filter-option-middle"><span class="separator"></span></div>
+                                <div class="filter-option-left">
+                                    <span>* :</span>
+                                </div>
+                                <div class="hide-filter-option hide-on-click">
+                                    <div class="delete-condition"><div class="point"></div><div class="text-filter-option" title="Xóa điều kiện lọc">Xóa điều kiện lọc</div></div>
+                                    <div class="default-condition condition"><div class="point" style="visibility:visible;"></div><div class="text-filter-option" title="Chứa">Chứa</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Bằng">Bằng</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Bắt đầu với">Bắt đầu với</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Kết thúc với">Kết thúc với</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Không chứa">Không chứa</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Trống">Trống</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Không trống">Không trống</div></div>
+                                </div>
+                            </div>
+                            <div class="filter-input">
+                                <input filterType="Chứa" fieldData="TaxCode" type="text" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-header-item-3" fieldData="Note">
+                        <div class="column-title" state="normal"><span>Ghi chú</span></div>
+                        <div class="column-filter">
+                            <div class="filter-option toggle-btn">
+                                <div class="filter-option-right"><span><i style="padding: 0 3px;" class="fas fa-caret-down"></i></span></div>
+                                <div class="filter-option-middle"><span class="separator"></span></div>
+                                <div class="filter-option-left">
+                                    <span>* :</span>
+                                </div>
+                                <div class="hide-filter-option hide-on-click">
+                                    <div class="delete-condition"><div class="point"></div><div class="text-filter-option" title="Xóa điều kiện lọc">Xóa điều kiện lọc</div></div>
+                                    <div class="default-condition condition"><div class="point" style="visibility:visible;"></div><div class="text-filter-option" title="Chứa">Chứa</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Bằng">Bằng</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Bắt đầu với">Bắt đầu với</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Kết thúc với">Kết thúc với</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Không chứa">Không chứa</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Trống">Trống</div></div>
+                                    <div class="condition"><div class="point"></div><div class="text-filter-option" title="Không trống">Không trống</div></div>
+                                </div>
+                            </div>
+                            <div class="filter-input">
+                                <input filterType="Chứa" fieldData="Note" type="text" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-header-item-2" fieldData="Use" style="border:none;" state="normal">
+                        <div class="column-title" state="normal"><span>Sử dụng</span></div>
+                        <div class="column-filter">
+                            <div class="filter-option toggle-btn" style="width:calc(100% - 9px);">
+                                <div class="filter-option-right"><span><i style="padding: 0 3px;" class="fas fa-caret-down"></i></span></div>
+                                <div class="filter-option-middle"><span class="separator"></span></div>
+                                <div class="filter-option-left" style="font-weight:normal;margin:0 auto;">
+                                    <span style="padding-left: 15px;">Bỏ lọc</span>
+                                </div>
+                                <div class="hide-filter-option hide-on-click" style="height:90px;">
+                                    <div class="condition" style="height:27px;"><div class="point"></div><div class="text-filter-option" title="Bỏ lọc">Bỏ lọc</div></div>
+                                    <div class="condition" style="height:27px;"><div class="point"></div><div class="text-filter-option" title="Có">Có</div></div>
+                                    <div class="condition" style="height:27px;"><div class="point"></div><div class="text-filter-option" title="Không">Không</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid view -->
+                <!-- Created by BQLINH (1/5/2019) -->
+                <div class="grid-view" style="position:relative;">
+                    <!-- Loading -->
+                    <!-- Created by BQLINH (20/5/2019) -->
+                    <div class="loading" style="display:none;"></div>
+                </div>
+
+                <div class="row-grid-clone" style="display:none">
+                    <div class="data-item-row">
+                        <div class="data-item data-item-1  ">
+                            <span fieldData="ID"></span>
+                        </div>
+                        <div class="data-item data-item-2">
+                            <span fieldData="SupplierCode">NCC001</span>
+                        </div>
+                        <div class="data-item data-item-3">
+                            <span fieldData="SupplierName">Công ty in văn hóa Sài Gòn</span>
+                        </div>
+                        <div class="data-item data-item-3">
+                            <span fieldData="Address">754 Hàm Tử, Phường 5, Quận 5, HCM</span>
+                        </div>
+                        <div class="data-item data-item-2">
+                            <span fieldData="TaxCode">8207604443</span>
+                        </div>
+                        <div class="data-item data-item-3">
+                            <span fieldData="Note"></span>
+                        </div>
+                        <div class="data-item data-item-2" style="border-right:none;text-align:center;">
+                            <span fieldData="Use"><img class="checkbox-false" /></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid footer -->
+                <!-- Created by BQLINH (1/5/2019) -->
+                <div class="grid-footer">
+                    <div class="grid-footer-left">
+                        <span class="go-to-first-page icon-change-page"></span>
+                        <span class="go-to-before-page icon-change-page"></span>
+                        <span class="separator"></span>
+                        <span style="margin: -2px 1px 0 3px">Trang</span>
+                        <span class="current-display-record"><input type="text" name="name" value="1" /></span>
+                        <span style="margin: -1px 4px 0 0;" class="total-record">trên 2</span>
+                        <span class="separator"></span>
+                        <span class="go-to-after-page icon-change-page"></span>
+                        <span class="go-to-last-page icon-change-page"></span>
+                        <span class="separator"></span>
+                        <span style="margin: -2px 0 0 2px;">Số bản ghi</span>
+                        <div class="number-display-record">
+                            <input type="text" name="name" disabled value="50" />
+                            <div class="select-record hide-on-click">
+                                <div><span>10</span></div>
+                                <div><span>20</span></div>
+                                <div style="background-color:#b3d7ff;"><span>50</span></div>
+                                <div><span>100</span></div>
+                            </div>
+                        </div>
+                        <div class="dropdown-icon icon-selection toggle-btn"></div>
+                    </div>
+                    <div class="grid-footer-right float-right">
+                        <span>Hiển thị 1 - 50 trên 100 kết quả</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Dialog đăng ký bạn đọc -->
+    <!-- Created by BQLINH (5/5/2019) -->
+    <div class="dlgResgisterReader" title="Đăng ký bạn đọc" style="display:none;">
+        <div class="dialog-content">
+            <div class="dialog-left  float-left">
+                <div class="avatar"></div>
+                <div class="avatar-change">
+                    <a href="#" style="color:blue; text-decoration:none; outline:none;">Thay ảnh khác</a>
+                    <!--<input type="file" id="avatar-change-file" name="name" value="" />-->
+                </div>
+            </div>
+            <div class="dialog-right float-left">
+                <div class="lblTitle"><label>THÔNG TIN BẠN ĐỌC</label></div>
+                <div class="dlgRow">
+                    <div class="col-type-1"><label>Họ và đệm <span style="color:red;">(*)</span></label></div>
+                    <div class="col-type-5"><input type="text" id="txtFirstAndMiddleName" class="required" value="Bùi Quang " /></div>
+                    <div class="col-type-2 secondlable"><label>Tên <span style="color:red;">(*)</span></label></div>
+                    <div class="col-type-6"><input type="text" id="txtLastName" class="required" value="Linh" /></div>
+                    <div class="col-type-3 secondlable"><label>Họ và tên</label></div>
+                    <div class="col-type-flex"><input type="text" disabled id="txtFullName" value="Bùi Quang Linh" /></div>
+                </div>
+                <div class="dlgRow">
+                    <div class="col-type-1"><label>Lớp <span style="color:red;">(*)</span></label></div>
+                    <div class="col-type-5"><input type="text" id="class" name="class" /></div>
+                    <div class="col-type-2 secondlable"><label>Giới tính</label></div>
+                    <div class="col-type-6">
+                        <input style="float: left; width: calc(100% - 17px);" type="text" name="name" />
+                        <div class="dropdown-icon"></div>
+                    </div>
+                    <div class="col-type-3 secondlable"><label>Ngày sinh</label></div>
+                    <div class="col-type-5">
+                        <input style="float: left; width: calc(100% - 26px);" type="text" id="txtBirthday" name="Birthday" />
+                        <div class="date-pick"><div class="date-pick-icon "></div></div>
+                    </div>
+                </div>
+                <div class="dlgRow">
+                    <div class="col-type-1"><label>Địa chỉ</label></div>
+                    <div class="col-type-flex"><input type="text" id="txtAddress" /></div>
+                </div>
+                <div class="lblTitle"><label>THÔNG TIN THẺ</label></div>
+                <div class="dlgRow">
+                    <div class="col-type-1"><label>Mã thẻ</label></div>
+                    <div class="col-type-5"><input type="text" id="txtCardCode" /></div>
+                    <div class="col-type-4 secondlable"><label>Ngày cấp</label></div>
+                    <div class="col-type-5">
+                        <input style="float: left; width: calc(100% - 26px);" type="text" id="txtlicensedDate" />
+                        <div class="date-pick"><div class="date-pick-icon"></div></div>
+                    </div>
+                </div>
+                <div class="dlgRow">
+                    <div class="col-type-1"><label>Ngày hiệu lực</label></div>
+                    <div class="col-type-5">
+                        <input style="float: left; width: calc(100% - 26px);" type="text" id="txtEffectDate" />
+                        <div class="date-pick"><div class="date-pick-icon"></div></div>
+                    </div>
+                    <div class="col-type-4 secondlable"><label>Ngày hết hạn</label></div>
+                    <div class="col-type-5">
+                        <input style="float: left;width: calc(100% - 26px);" type="text" id="txtExpireDate" />
+                        <div class="date-pick"><div class="date-pick-icon"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Dialog cho nhà cung cấp -->
+    <!-- Created by BQLINH (7/5/2019) -->
+    <div class="dlgSupplierDetail" style="display:none;">
+        <div class="dialog-content">
+            <div class="dlgRow">
+                <div class="col-type-1"><label title="Mã nhà cung cấp">Mã NCC <span style="color:red;">(*)</span></label></div>
+                <div class="col-type-flex"><input tabindex="1" type="text" class="required" id="txtSupplierCode" dataIndex="SupplierCode" /></div>
+            </div>
+            <div class="dlgRow">
+                <div class="col-type-1"><label title="Tên nhà cung cấp">Tên NCC <span style="color:red;">(*)</span></label></div>
+                <div class="col-type-flex"><input tabindex="2" type="text" class="required" id="txtSupplierName" dataIndex="SupplierName" /></div>
+            </div>
+            <div class="dlgRow">
+                <div class="col-type-1"><label>Địa chỉ</label></div>
+                <div class="col-type-flex"><input tabindex="3" type="text" id="txtAddress" dataIndex="Address" /></div>
+            </div>
+            <div class="dlgRow">
+                <div class="col-type-1"><label>Mã số thuế</label></div>
+                <div class="col-type-flex"><input tabindex="4" type="text" id="txtTaxCode" dataIndex="TaxCode" /></div>
+            </div>
+            <div class="dlgRow">
+                <input style="display:none;" type="text" id="txtSupplierID" dataIndex="SupplierID" />
+            </div>
+        </div>
+        <div class="dlgRow">
+            <div class="col-type-1"><label>Ghi chú</label></div>
+            <div class="col-type-flex"><textarea tabindex="5" type="text" id="txtNote" dataIndex="Note"></textarea></div>
+        </div>
+        <div class="btnRow">
+            <div class="checkbox-area" id="chkUse">
+                <div class="checkbox-icon" title="Nhấn Enter để thay đổi checkbox"><img class="checkbox-false" dataIndex="Use" tabindex="6" /></div>
+                <div class="checkbox-text">Sử dụng</div>
+            </div>
+            <div class="dialog-button icon-save" tabindex="7" id="btnSave">
+                <div class="dialog-icon"></div>
+                <div class="dialog-button-text" style="text-align:center;">Cất</div>
+            </div>
+            <div class="dialog-button icon-cancel" tabindex="8" id="btnCancel">
+                <div class="dialog-icon"></div>
+                <div class="dialog-button-text" style="text-align:center;">Hủy bỏ</div>
+            </div>
+            <div id="focusguard" tabindex="9"></div>
+        </div>
+    </div>
+    <!-- Dialog xóa nhà cung cấp -->
+    <!-- Created by BQLINH (20/5/2019) -->
+    <div class="dlgSupplierDelete" style="display:none;">
+        <div class="dialog-content">
+            <div class="dlgRow">
+                <img src="http://cdn.qlth.vn/Library/Content/Css/Control/Image/question32.png" /><div>Bạn có thực sự muốn xóa <span class="supplierTitle">Nhà cung cấp</span> đang chọn không?</div>
+            </div>
+            <div class="btnRow">
+                <div class="dialog-button icon-no" id="btnNo">
+                    <div class="dialog-icon" style="margin: 2px 3px;"></div>
+                    <div class="dialog-button-text" style="text-align:center;">Không</div>
+                </div>
+                <div class="dialog-button icon-yes" id="btnYes">
+                    <div class="dialog-icon" style="margin: 2px 3px;"></div>
+                    <div class="dialog-button-text" style="text-align:center;">Có</div>
+                </div>
+                <div tabindex="3"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contextmenu">
+        <ul class="contextMenu" hidden>
+            <li><a href="#"><i class="fa fa-home"></i> Homepage</a></li>
+            <li><a href="#"><i class="fa fa-sitemap"></i> Sitemap</a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li>
+        </ul>
+    </div>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <script src="../Scripts/lib/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../Scripts/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="../Scripts/dialog/dialogSuppliers.js"></script>
+    <script src="../Scripts/base/validate.js"></script>
+    <script src="../Scripts/view/supplier.js"></script>
+</body>
+</html>

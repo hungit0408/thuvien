@@ -1,0 +1,11 @@
+﻿.context-menu-list {
+    width: 142px !important;
+    height: 218px;
+    min-width: 142px;
+    border-color: #99bce8;
+    background-color: #f0f0f0;
+}
+.context-menu-item {
+    font-size: 12px;
+    background-color: #f0f0f0;
+}
